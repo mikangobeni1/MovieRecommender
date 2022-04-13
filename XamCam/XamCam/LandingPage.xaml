@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamCam.LandingPage"
+             NavigationPage.HasNavigationBar="False"
+             >
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="0"
+               Grid.Column="1"
+               Text="JpegToMovie" TextDecorations="None" 
+               FontSize="Large"
+               HorizontalOptions="Center"
+                  VerticalOptions="Center"
+               TextColor="#000000" />
+
+        <Label Grid.Row="1"
+               Grid.Column="1"
+               Text="Allow face biometrics to be captured" TextDecorations="None" 
+               FontSize="Small"
+               VerticalOptions="End"
+               Margin="30"
+               TextColor="Gray" />
+
+        <Switch Grid.Row="1"
+               Grid.Column="1"
+               IsToggled="false"
+               OnColor="Aquamarine"
+               ThumbColor="BlueViolet" 
+                VerticalOptions="End"
+            HorizontalOptions="Center"
+                Toggled="onToggled" />
+
+        <Button Grid.Row="2" Grid.Column="1"
+               
+            x:Name="btnSelfie" 
+            Text="Take image"  
+            Clicked="BtnSelfieProceed_Clicked"
+            BackgroundColor="#00a4fc" 
+            TextColor="#FFF"
+            VerticalOptions="Start"
+            HorizontalOptions="Center"/>
+        
+        <Label Grid.Row="2"
+                  Grid.Column="1"
+                    x:Name="lblOr" 
+               Text="or" TextDecorations="None" 
+               FontSize="Large"
+               HorizontalOptions="Center"
+                  VerticalOptions="Center"
+               TextColor="#00a4fc"
+               
+               />
+        <Button Grid.Row="2"
+                   Grid.Column="1"
+                x:Name="btnEmoji" 
+            Text="Choose emoji"  
+            Clicked="BtnEmojiProceed_Clicked"
+            BackgroundColor="#00a4fc" 
+            TextColor="#FFF"
+            VerticalOptions="End"
+            HorizontalOptions="Center"/>
+    </Grid>
+</ContentPage>
