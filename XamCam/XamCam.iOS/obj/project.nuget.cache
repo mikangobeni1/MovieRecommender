@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "lHgUu1fHDDVkwqJP1GkFRvdHMg+NFfXPoOl1TqQCp+w088/0wcDk0tyjbK/JThXxZJEBt0icw+NUijST3d0HWQ==",
+  "dgSpecHash": "eUTOF38QVqfvwXOpHYHez8Xwo5jQG9UrRm8yP/vtjUO2V1GyqDia34aFtbs8dCp3KfQx0UjBFPTnvGez7S+ztg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bbdnet2378.BBDNET\\Desktop\\Grad Level Up\\Java and C#\\C#\\Camera\\XamCam\\XamCam.iOS\\XamCam.iOS.csproj",
+  "projectFilePath": "C:\\GradProgramme\\LevelUps\\MovieRecommender\\MovieRecommender\\XamCam\\XamCam.iOS\\XamCam.iOS.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\bbdnet2378.BBDNET\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
-    "C:\\Users\\bbdnet2378.BBDNET\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
-    "C:\\Users\\bbdnet2378.BBDNET\\.nuget\\packages\\xamarin.essentials\\1.5.2\\xamarin.essentials.1.5.2.nupkg.sha512",
-    "C:\\Users\\bbdnet2378.BBDNET\\.nuget\\packages\\xamarin.forms\\4.7.0.1080\\xamarin.forms.4.7.0.1080.nupkg.sha512"
+    "C:\\Users\\bbdnet2579\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\bbdnet2579\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
+    "C:\\Users\\bbdnet2579\\.nuget\\packages\\xamarin.essentials\\1.5.2\\xamarin.essentials.1.5.2.nupkg.sha512",
+    "C:\\Users\\bbdnet2579\\.nuget\\packages\\xamarin.forms\\4.7.0.1080\\xamarin.forms.4.7.0.1080.nupkg.sha512"
   ],
   "logs": []
 }

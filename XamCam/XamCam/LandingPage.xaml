@@ -19,14 +19,11 @@
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
 
-        <Label Grid.Row="0"
-               Grid.Column="1"
-               Text="JpegToMovie" TextDecorations="None" 
-               FontSize="Large"
-               HorizontalOptions="Center"
-                  VerticalOptions="Center"
-               TextColor="#000000" />
+        
 
+        <StackLayout>
+            <Image Source="newappicon" WidthRequest="1000"/>
+        </StackLayout>
         <Label Grid.Row="1"
                Grid.Column="1"
                Text="Allow face biometrics to be captured" TextDecorations="None" 
@@ -39,7 +36,6 @@
                Grid.Column="1"
                IsToggled="false"
                OnColor="Aquamarine"
-               ThumbColor="BlueViolet" 
                 VerticalOptions="End"
             HorizontalOptions="Center"
                 Toggled="onToggled" />
@@ -47,30 +43,35 @@
         <Button Grid.Row="2" Grid.Column="1"
                
             x:Name="btnSelfie" 
-            Text="Take image"  
+            Text="Take a picture"  
             Clicked="BtnSelfieProceed_Clicked"
-            BackgroundColor="#00a4fc" 
-            TextColor="#FFF"
+            BackgroundColor="#F1F1F1" 
+            TextColor="#707070"
+                BorderRadius="10"
+                WidthRequest="300"
             VerticalOptions="Start"
             HorizontalOptions="Center"/>
         
         <Label Grid.Row="2"
                   Grid.Column="1"
                     x:Name="lblOr" 
-               Text="or" TextDecorations="None" 
-               FontSize="Large"
+               Text="OR" TextDecorations="None" 
+               FontSize="16"
+               FontAttributes="Bold"
                HorizontalOptions="Center"
                   VerticalOptions="Center"
-               TextColor="#00a4fc"
+               TextColor="#707070"
                
                />
         <Button Grid.Row="2"
                    Grid.Column="1"
                 x:Name="btnEmoji" 
-            Text="Choose emoji"  
+            Text="Choose an emoticon"  
             Clicked="BtnEmojiProceed_Clicked"
-            BackgroundColor="#00a4fc" 
-            TextColor="#FFF"
+            BackgroundColor="#F1F1F1" 
+            TextColor="#707070"
+                BorderRadius="10"
+                WidthRequest="300"
             VerticalOptions="End"
             HorizontalOptions="Center"/>
     </Grid>
