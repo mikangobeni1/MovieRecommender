@@ -1,9 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="XamCam.EmojiPage">
+             x:Class="XamCam.EmojiPage"
+             BackgroundColor="#ffffff"             
+             >
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
             <RowDefinition />
             <RowDefinition />
             <RowDefinition />
@@ -13,14 +19,190 @@
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
-            <ColumnDefinition />
-            <ColumnDefinition />
+            <ColumnDefinition Width="auto"/>
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
 
-        <Image Grid.Row="0"
-               Grid.Column="0"
-               Source="angry.png" />
+        <Label Grid.Row="0"
+               Grid.Column="1"
+               Text="Choose Emotion" 
+               TextDecorations="None" 
+               FontSize="Large"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               TextColor="#707070" />
+
+        <Frame Grid.Row="1"
+               Grid.Column="1"
+               x:Name="f_disgust"
+               HeightRequest="80" WidthRequest="80" 
+               CornerRadius="10" 
+               HorizontalOptions="Center" 
+               VerticalOptions="Start" Margin="0" Padding="0" 
+               BackgroundColor="#9A7245">
+        </Frame>
+
+        <Image Grid.Row="1"
+               Grid.Column="1"
+               Source="disgust.png"
+                x:Name="btn_disgust" >
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="onDisgust"
+                NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+        </Image>
+
+        <Frame Grid.Row="2"
+               Grid.Column="1"
+               x:Name="f_anger"
+               HeightRequest="80" WidthRequest="80" 
+               CornerRadius="10" 
+               HorizontalOptions="Center" 
+               VerticalOptions="Start" Margin="0" Padding="0" 
+               BackgroundColor="#9A7245">
+        </Frame>
+
+        <Image Grid.Row="2"
+               Grid.Column="1"
+               Source="anger.png" 
+                  x:Name="btn_anger">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="onAnger"
+                NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+        </Image>
+
+        <Frame Grid.Row="3"
+               Grid.Column="1"
+               x:Name="f_neutral"
+               HeightRequest="80" WidthRequest="80" 
+               CornerRadius="10" 
+               HorizontalOptions="Center" 
+               VerticalOptions="Start" Margin="0" Padding="0" 
+               BackgroundColor="#9A7245">
+        </Frame>
+
+        <Image Grid.Row="3"
+               Grid.Column="1"
+               Source="neutral.png"
+                  x:Name="btn_neutral">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="onNeutral"
+                NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+        </Image>
+
+        <Frame Grid.Row="4"
+               Grid.Column="1"
+               x:Name="f_sadness"
+               HeightRequest="80" WidthRequest="80" 
+               CornerRadius="10" 
+               HorizontalOptions="Center" 
+               VerticalOptions="Start" Margin="0" Padding="0" 
+               BackgroundColor="#9A7245">
+        </Frame>
+
+        <Image Grid.Row="4"
+               Grid.Column="1"
+               Source="sadness.png" 
+               x:Name="btn_sadness" >
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="onSadness"
+                NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+        </Image>
+
+        <Frame Grid.Row="5"
+               Grid.Column="1"
+               x:Name="f_surprised"
+               HeightRequest="80" WidthRequest="80" 
+               CornerRadius="10" 
+               HorizontalOptions="Center" 
+               VerticalOptions="Start" Margin="0" Padding="0" 
+               BackgroundColor="#9A7245">
+        </Frame>
+
+        <Image Grid.Row="5"
+               Grid.Column="1"
+               Source="surprised.png" 
+               x:Name="btn_surprised" >
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="onSurprised"
+                NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+        </Image>
+
+        <Frame Grid.Row="6"
+               Grid.Column="1"
+               x:Name="f_fear"
+               HeightRequest="80" WidthRequest="80" 
+               CornerRadius="10" 
+               HorizontalOptions="Center" 
+               VerticalOptions="Start" Margin="0" Padding="0" 
+               BackgroundColor="#9A7245">
+        </Frame>
+
+        <Image Grid.Row="6"
+               Grid.Column="1"
+               Source="fear.png" 
+                  x:Name="btn_fear" >
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="onFear"
+                NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+        </Image>
+
+        <Frame Grid.Row="7"
+               Grid.Column="1"
+               x:Name="f_happiness"
+               HeightRequest="80" WidthRequest="80" 
+               CornerRadius="10" 
+               HorizontalOptions="Center" 
+               VerticalOptions="Start" Margin="0" Padding="0" 
+               BackgroundColor="#9A7245">
+        </Frame>
+
+
+        <Image Grid.Row="7"
+               Grid.Column="1"
+               Source="happiness.png" 
+               x:Name="btn_happiness" >
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="onHappiness"
+                NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+        </Image>
+
+
+        <Button Grid.Row="8"
+                Grid.Column="0"
+                x:Name="btnEmojiProceed" 
+                Text="Proceed"  
+                Clicked="BtnEmojiProceed_Clicked"
+                BackgroundColor="#F1F1F1"
+                TextColor="#707070"
+                BorderRadius="10"
+                VerticalOptions="Center"
+                HorizontalOptions="End"/>
+
+
+        <Button Grid.Row="8"
+                Grid.Column="2"
+                x:Name="btnRandomise" 
+                Text="Random"  
+                Clicked="BtnRandom_Clicked"
+                BackgroundColor="#F1F1F1"
+                TextColor="#707070"
+                BorderRadius="10"
+                VerticalOptions="Center"
+                HorizontalOptions="Start"/>
 
     </Grid>
 </ContentPage>

@@ -21,6 +21,12 @@ namespace XamCam
         {
             InitializeComponent();
 
+            ColorTypeConverter converter = new ColorTypeConverter();
+            Color backSectionBackgroundColor = (Color)(converter.ConvertFromInvariantString("#9A7245"));
+            ((NavigationPage)Application.Current.MainPage).BarBackgroundColor = Color.White;
+            ((NavigationPage)Application.Current.MainPage).BarTextColor = backSectionBackgroundColor;
+
+
             CaptureFace();
         }
 
@@ -94,7 +100,7 @@ namespace XamCam
             }
             catch (Exception ex)
             {
-                await DisplayAlert("Retake Biometric", "Show entire face", "Ok");
+                await DisplayAlert("Retake Biometric", "Show whole face", "Ok");
             }
 
             // go back to main page

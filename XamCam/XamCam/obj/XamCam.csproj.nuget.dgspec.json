@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bbdnet2378.BBDNET\\Desktop\\Grad Level Up\\Java and C#\\C#\\Camera\\XamCam\\XamCam\\XamCam.csproj": {}
+    "C:\\Users\\bbdnet2378.BBDNET\\Desktop\\Grad Level Up\\Java and C#\\C#\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bbdnet2378.BBDNET\\Desktop\\Grad Level Up\\Java and C#\\C#\\Camera\\XamCam\\XamCam\\XamCam.csproj": {
+    "C:\\Users\\bbdnet2378.BBDNET\\Desktop\\Grad Level Up\\Java and C#\\C#\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bbdnet2378.BBDNET\\Desktop\\Grad Level Up\\Java and C#\\C#\\Camera\\XamCam\\XamCam\\XamCam.csproj",
+        "projectUniqueName": "C:\\Users\\bbdnet2378.BBDNET\\Desktop\\Grad Level Up\\Java and C#\\C#\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj",
         "projectName": "XamCam",
-        "projectPath": "C:\\Users\\bbdnet2378.BBDNET\\Desktop\\Grad Level Up\\Java and C#\\C#\\Camera\\XamCam\\XamCam\\XamCam.csproj",
+        "projectPath": "C:\\Users\\bbdnet2378.BBDNET\\Desktop\\Grad Level Up\\Java and C#\\C#\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj",
         "packagesPath": "C:\\Users\\bbdnet2378.BBDNET\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bbdnet2378.BBDNET\\Desktop\\Grad Level Up\\Java and C#\\C#\\Camera\\XamCam\\XamCam\\obj\\",
+        "outputPath": "C:\\Users\\bbdnet2378.BBDNET\\Desktop\\Grad Level Up\\Java and C#\\C#\\MovieRecommender\\XamCam\\XamCam\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bbdnet2378.BBDNET\\AppData\\Roaming\\NuGet\\NuGet.Config",

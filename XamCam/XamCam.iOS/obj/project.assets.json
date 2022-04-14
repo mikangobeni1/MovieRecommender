@@ -1151,11 +1151,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bbdnet2378.BBDNET\\Desktop\\Grad Level Up\\Java and C#\\C#\\Camera\\XamCam\\XamCam.iOS\\XamCam.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\bbdnet2378.BBDNET\\Desktop\\Grad Level Up\\Java and C#\\C#\\MovieRecommender\\XamCam\\XamCam.iOS\\XamCam.iOS.csproj",
       "projectName": "XamCam.iOS",
-      "projectPath": "C:\\Users\\bbdnet2378.BBDNET\\Desktop\\Grad Level Up\\Java and C#\\C#\\Camera\\XamCam\\XamCam.iOS\\XamCam.iOS.csproj",
+      "projectPath": "C:\\Users\\bbdnet2378.BBDNET\\Desktop\\Grad Level Up\\Java and C#\\C#\\MovieRecommender\\XamCam\\XamCam.iOS\\XamCam.iOS.csproj",
       "packagesPath": "C:\\Users\\bbdnet2378.BBDNET\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bbdnet2378.BBDNET\\Desktop\\Grad Level Up\\Java and C#\\C#\\Camera\\XamCam\\XamCam.iOS\\obj\\",
+      "outputPath": "C:\\Users\\bbdnet2378.BBDNET\\Desktop\\Grad Level Up\\Java and C#\\C#\\MovieRecommender\\XamCam\\XamCam.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -1172,8 +1172,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\bbdnet2378.BBDNET\\Desktop\\Grad Level Up\\Java and C#\\C#\\Camera\\XamCam\\XamCam\\XamCam.csproj": {
-              "projectPath": "C:\\Users\\bbdnet2378.BBDNET\\Desktop\\Grad Level Up\\Java and C#\\C#\\Camera\\XamCam\\XamCam\\XamCam.csproj"
+            "C:\\Users\\bbdnet2378.BBDNET\\Desktop\\Grad Level Up\\Java and C#\\C#\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj": {
+              "projectPath": "C:\\Users\\bbdnet2378.BBDNET\\Desktop\\Grad Level Up\\Java and C#\\C#\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj"
             }
           }
         }

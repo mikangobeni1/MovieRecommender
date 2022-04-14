@@ -18,6 +18,10 @@ namespace XamCam.Droid
             await CrossMedia.Current.Initialize();
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
+
+            Window.SetStatusBarColor(Android.Graphics.Color.Rgb(128, 128, 128));
+            Window.SetNavigationBarColor(Android.Graphics.Color.Rgb(255, 255, 255));
+
         }
     }
 }
