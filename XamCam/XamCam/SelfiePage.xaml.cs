@@ -21,6 +21,7 @@ namespace XamCam
         {
             InitializeComponent();
 
+
             ColorTypeConverter converter = new ColorTypeConverter();
             Color backSectionBackgroundColor = (Color)(converter.ConvertFromInvariantString("#9A7245"));
             ((NavigationPage)Application.Current.MainPage).BarBackgroundColor = Color.White;
@@ -34,6 +35,7 @@ namespace XamCam
         {
             try
             {
+
                 var photo = await CrossMedia.Current.TakePhotoAsync(new StoreCameraMediaOptions()
                 {
                     DefaultCamera = CameraDevice.Front,
@@ -56,6 +58,8 @@ namespace XamCam
                     formContent.Add(content, "image_base64");
                     var message = await client.PostAsync("https://api-us.faceplusplus.com/facepp/v3/detect?api_key=8g0e2SuGg1bFNU3B0WC7gZepIY0Jv9XE&api_secret=jZL-LfCyw57R5nHXmFRD-TYBtQbA4BXG&return_attributes=emotion,age,gender", formContent);
                     var result = await message.Content.ReadAsStringAsync();
+
+                    Console.WriteLine(result);
 
                     // get results
 
