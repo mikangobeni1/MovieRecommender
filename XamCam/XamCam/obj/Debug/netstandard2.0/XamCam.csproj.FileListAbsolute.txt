@@ -28,4 +28,23 @@ C:\Users\bbdnet2378.BBDNET\Desktop\Grad Level Up\Java and C#\C#\MovieRecommender
 C:\Users\bbdnet2378.BBDNET\Desktop\Grad Level Up\Java and C#\C#\MovieRecommender\XamCam\XamCam\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\bbdnet2378.BBDNET\Desktop\Grad Level Up\Java and C#\C#\MovieRecommender\XamCam\XamCam\obj\Debug\netstandard2.0\XamCam.dll
 C:\Users\bbdnet2378.BBDNET\Desktop\Grad Level Up\Java and C#\C#\MovieRecommender\XamCam\XamCam\obj\Debug\netstandard2.0\XamCam.pdb
+<<<<<<< HEAD
 C:\Users\bbdnet2378.BBDNET\Desktop\Grad Level Up\Java and C#\C#\MovieRecommender\XamCam\XamCam\obj\Debug\netstandard2.0\GenreImages.xaml.g.cs
+=======
+C:\GradProgramme\LevelUps\MovieRecommender\MovieRecommender\XamCam\XamCam\bin\Debug\netstandard2.0\XamCam.deps.json
+C:\GradProgramme\LevelUps\MovieRecommender\MovieRecommender\XamCam\XamCam\bin\Debug\netstandard2.0\XamCam.dll
+C:\GradProgramme\LevelUps\MovieRecommender\MovieRecommender\XamCam\XamCam\bin\Debug\netstandard2.0\XamCam.pdb
+C:\GradProgramme\LevelUps\MovieRecommender\MovieRecommender\XamCam\XamCam\obj\Debug\netstandard2.0\XamCam.csproj.AssemblyReference.cache
+C:\GradProgramme\LevelUps\MovieRecommender\MovieRecommender\XamCam\XamCam\obj\Debug\netstandard2.0\XamCam.GeneratedMSBuildEditorConfig.editorconfig
+C:\GradProgramme\LevelUps\MovieRecommender\MovieRecommender\XamCam\XamCam\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\GradProgramme\LevelUps\MovieRecommender\MovieRecommender\XamCam\XamCam\obj\Debug\netstandard2.0\EmojiPage.xaml.g.cs
+C:\GradProgramme\LevelUps\MovieRecommender\MovieRecommender\XamCam\XamCam\obj\Debug\netstandard2.0\LandingPage.xaml.g.cs
+C:\GradProgramme\LevelUps\MovieRecommender\MovieRecommender\XamCam\XamCam\obj\Debug\netstandard2.0\MoviePage.xaml.g.cs
+C:\GradProgramme\LevelUps\MovieRecommender\MovieRecommender\XamCam\XamCam\obj\Debug\netstandard2.0\SelfiePage.xaml.g.cs
+C:\GradProgramme\LevelUps\MovieRecommender\MovieRecommender\XamCam\XamCam\obj\Debug\netstandard2.0\XamCam.AssemblyInfoInputs.cache
+C:\GradProgramme\LevelUps\MovieRecommender\MovieRecommender\XamCam\XamCam\obj\Debug\netstandard2.0\XamCam.AssemblyInfo.cs
+C:\GradProgramme\LevelUps\MovieRecommender\MovieRecommender\XamCam\XamCam\obj\Debug\netstandard2.0\XamCam.csproj.CoreCompileInputs.cache
+C:\GradProgramme\LevelUps\MovieRecommender\MovieRecommender\XamCam\XamCam\obj\Debug\netstandard2.0\XamlC.stamp
+C:\GradProgramme\LevelUps\MovieRecommender\MovieRecommender\XamCam\XamCam\obj\Debug\netstandard2.0\XamCam.dll
+C:\GradProgramme\LevelUps\MovieRecommender\MovieRecommender\XamCam\XamCam\obj\Debug\netstandard2.0\XamCam.pdb
+>>>>>>> 2cdb1a02434fba606b71ebd3df111c24dca7ef3c
