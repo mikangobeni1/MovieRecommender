@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamCam.MoviePage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="We've got it!"
+                   TextDecorations="None" 
+               FontSize="18"
+                   FontAttributes="Bold"
+                    TextColor="#707070"
+                
+                HorizontalOptions="CenterAndExpand" />
+
+            <Frame HeightRequest="450" WidthRequest="300" BackgroundColor="White" Padding="0" HasShadow="True" Margin="10" CornerRadius="10" HorizontalOptions="CenterAndExpand">
+                <Image Source="https://image.tmdb.org/t/p/original/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg"/>
+            </Frame>
+            <Label Text="Spider-Man: No Way Home"
+                   TextDecorations="None" 
+               FontSize="13"
+                    TextColor="#707070"
+                HorizontalOptions="CenterAndExpand" />
+            <Label Text="148m"
+                   TextDecorations="None" 
+               FontSize="13"
+                    TextColor="#707070"
+
+                HorizontalOptions="CenterAndExpand" />
+
+            <BoxView HeightRequest="10"/>
+            <Label Text="Not feeling it?"
+                   TextDecorations="None" 
+               FontSize="16"
+                   FontAttributes="Bold"
+                   
+                    TextColor="#707070"
+                
+                HorizontalOptions="CenterAndExpand" />
+            
+           
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
