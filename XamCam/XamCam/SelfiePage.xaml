@@ -13,7 +13,7 @@
                 AbsoluteLayout.LayoutBounds=".5, .65, 200, 200"
                 AbsoluteLayout.LayoutFlags="PositionProportional"
                 x:Name="lblLoadingFaceResult"
-                Text="Loading emotion..." TextDecorations="None"
+                Text="Loading..." TextDecorations="None"
                 FontSize="16"
                 HorizontalOptions="Center"
                 VerticalOptions="Center"

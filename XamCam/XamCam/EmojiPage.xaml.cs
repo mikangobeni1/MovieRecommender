@@ -16,6 +16,8 @@ namespace XamCam
         String emotion;
         public EmojiPage()
         {
+
+           
             InitializeComponent();
 
             ColorTypeConverter converter = new ColorTypeConverter();
@@ -31,6 +33,8 @@ namespace XamCam
             f_sadness.IsVisible = false;
             f_surprised.IsVisible = false;
 
+            btnEmojiProceed.IsVisible = false;
+
             emotion = "";
 
         }
@@ -39,6 +43,7 @@ namespace XamCam
         void onHappiness(object sender, EventArgs args)
         {
             happiness();
+            btnEmojiProceed.IsVisible = true;
         }
 
         void happiness()
@@ -56,6 +61,8 @@ namespace XamCam
         void onFear(object sender, EventArgs args)
         {
             fear();
+            btnEmojiProceed.IsVisible = true;
+
         }
 
         void fear()
@@ -73,6 +80,8 @@ namespace XamCam
         void onSurprised(object sender, EventArgs args)
         {
             surprise();
+            btnEmojiProceed.IsVisible = true;
+
         }
         void surprise()
         {
@@ -90,6 +99,8 @@ namespace XamCam
         void onNeutral(object sender, EventArgs args)
         {
             neutral();
+            btnEmojiProceed.IsVisible = true;
+
         }
         void neutral()
         {
@@ -107,6 +118,8 @@ namespace XamCam
         void onDisgust(object sender, EventArgs args)
         {
             disgust();
+            btnEmojiProceed.IsVisible = true;
+
         }
         void disgust()
         {
@@ -123,6 +136,8 @@ namespace XamCam
         void onAnger(object sender, EventArgs args)
         {
             anger();
+            btnEmojiProceed.IsVisible = true;
+
         }
         void anger()
         {
@@ -140,6 +155,8 @@ namespace XamCam
         void onSadness(object sender, EventArgs args)
         {
             sadness();
+            btnEmojiProceed.IsVisible = true;
+
         }
         void sadness()
         {
@@ -173,6 +190,7 @@ namespace XamCam
         float countInterval;
         private void BtnRandom_Clicked(object sender, EventArgs e)
         {
+            btnRandomise.IsVisible = false;
             Random random = new Random();
             countInterval = 0.1F;
             int mainCounter = 0;
@@ -237,6 +255,8 @@ namespace XamCam
                         }
                         else
                         {
+                            btnRandomise.IsVisible = true;
+                            btnEmojiProceed.IsVisible = true;
                             return false;
                
                         }
