@@ -108,7 +108,8 @@ namespace XamCam
             }
 
             // go back to main page
-            await Navigation.PopAsync();
+            //  await Navigation.PopAsync();
+            await Navigation.PushAsync(new GenreImages());
 
         }
 

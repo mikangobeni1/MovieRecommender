@@ -21,6 +21,7 @@ namespace XamCam
         private async void BtnSelfieProceed_Clicked(object sender, EventArgs e)
         {
 
+
             if (!consent_Popi)
             {
                 bool answer = await DisplayAlert("Popi Act", "Do you allow this app to capture your face biometrics?", "Yes", "No");
@@ -40,7 +41,6 @@ namespace XamCam
                 // go to page
                 await Navigation.PushAsync(new SelfiePage());
             }
-
         }
 
         private async void BtnEmojiProceed_Clicked(object sender, EventArgs e)

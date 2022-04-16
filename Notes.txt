@@ -1,0 +1,235 @@
+
+Recommend movies based on:
+	-physical emotion (face)
+	-pictures (picture is worth 1000 words)
+	-best rated (old school)
+	-similar movies based on genre
+
+emotions: sadness, surpise, fear, disgust, neutral, anger, happiness
+genres: 
+	Comedy
+	Action
+	Romance
+	Sci-fi
+	Horror
+	Family
+
+ <ScrollView x:Name="scroller"
+            Orientation="Vertical"
+            Grid.Row="0" Grid.Column="1"
+            Grid.RowSpan="9" Grid.ColumnSpan="1"
+            Scrolled="Handle_Scrolled"
+                >
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition />
+
+                <RowDefinition />
+                <RowDefinition />
+
+                <RowDefinition />
+                <RowDefinition />
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+
+
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0"
+                Grid.Column="0"
+                x:Name="lblCHooseImage"
+                Text="Choose 1" TextDecorations="None"
+                FontSize="20"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                TextColor="#707070" />
+
+            <Image Grid.Row="1"
+               Grid.Column="0"
+               Source="comedy.jpg"
+               HeightRequest="130"
+               HorizontalOptions="Start"
+               x:Name="genre_comedy">
+
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                Tapped="onNeutral"
+                NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
+
+            <Image Grid.Row="1"
+               Grid.Column="0"
+               Source="action.jpg"
+               HeightRequest="130"
+               HorizontalOptions="End"
+                  x:Name="genre_action">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                Tapped="onSadness"
+                NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
+            <Image Grid.Row="2"
+               Grid.Column="0"
+               Source="romance.jpg"
+                     HeightRequest="130"
+                  HorizontalOptions="Start"
+                  x:Name="genre_romance">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                Tapped="onSadness"
+                NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
+            <Image Grid.Row="2"
+               Grid.Column="0"
+               Source="scifi.jpg"
+                     HeightRequest="130"
+                  HorizontalOptions="End"
+                  x:Name="genre_scifi">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                Tapped="onSadness"
+                NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
+            <Image Grid.Row="3"
+               Grid.Column="0"
+               Source="horror.PNG"
+               HeightRequest="130"
+                  HorizontalOptions="Start"
+                  x:Name="genre_horror">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                Tapped="onSadness"
+                NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
+            <Image Grid.Row="3"
+               Grid.Column="0"
+               Source="family.jpg"
+                 HeightRequest="130"
+                  HorizontalOptions="End"
+                  x:Name="genre_family">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                Tapped="onSadness"
+                NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
+
+            <Label Grid.Row="4"
+                Grid.Column="0"
+                x:Name="lblCHooseImageYears"
+                Text="Choose 1" TextDecorations="None"
+                FontSize="20"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                TextColor="#707070" />
+            <Image Grid.Row="5"
+               Grid.Column="0"
+               Source="oldcar.png"
+               Margin="50, 0, 0, 0"
+                HeightRequest="80"
+                  HorizontalOptions="Start"
+                  x:Name="yearsOLD_family">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                Tapped="onSadness"
+                NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
+            <Image Grid.Row="5"
+               Grid.Column="0"
+               Source="todaycar.png"
+                HeightRequest="80"
+                  HorizontalOptions="Center"
+                  x:Name="yearsNEUTRAL_family">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                Tapped="onSadness"
+                NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
+            <Image Grid.Row="5"
+               Grid.Column="0"
+               Source="newestcar.png"
+               HeightRequest="80"
+                Margin="0, 0, 50, 0"
+                  HorizontalOptions="End"
+                  x:Name="yearsNEW_family">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                Tapped="onSadness"
+                NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
+
+            <Label Grid.Row="6"
+                Grid.Column="0"
+                x:Name="lblMovieOrSeries"
+                Text="Choose 1" TextDecorations="None"
+                FontSize="20"
+               
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                TextColor="#707070" />
+
+            <Image Grid.Row="7"
+               Grid.Column="0"
+               Source="movie.png"
+                  HorizontalOptions="Start"
+                 Margin="50,0,0,0"
+                   HeightRequest="80"
+                  x:Name="imgMovie">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                Tapped="onSadness"
+                NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
+            <Image Grid.Row="7"
+               Grid.Column="0"
+               Source="soap.png"
+                  HorizontalOptions="End"
+                   HeightRequest="80"
+               Margin="0,0,50,0"
+                  x:Name="imgSoap">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                Tapped="onSadness"
+                NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
+
+
+            <Button Grid.Row="8"
+                Grid.Column="0"
+                x:Name="btnProceedWithGenres"
+                Text="Proceed"
+                Clicked="BtnGenreProceed_Clicked"
+                BackgroundColor="#F1F1F1"
+                TextColor="#707070"
+                BorderRadius="10"
+                WidthRequest="300"
+                VerticalOptions="End"
+                HorizontalOptions="Center"
+                />
+
+            <ImageButton 
+            Grid.Row="8"
+            Grid.Column="0"
+            HeightRequest="30"
+            Source="family.jpg" 
+            HorizontalOptions="End"
+            BackgroundColor="Transparent"  />
+
+        </Grid>
+   </ScrollView>
