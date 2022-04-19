@@ -1146,20 +1146,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\risel\\.nuget\\packages\\": {}
+    "C:\\Users\\bbdnet2378\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\risel\\Documents\\BBD Graduate Program\\C\\MovieRecommender\\XamCam\\XamCam.iOS\\XamCam.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\bbdnet2378\\Desktop\\Grad Level Up\\Java and C#\\MovieRecommender\\XamCam\\XamCam.iOS\\XamCam.iOS.csproj",
       "projectName": "XamCam.iOS",
-      "projectPath": "C:\\Users\\risel\\Documents\\BBD Graduate Program\\C\\MovieRecommender\\XamCam\\XamCam.iOS\\XamCam.iOS.csproj",
-      "packagesPath": "C:\\Users\\risel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\risel\\Documents\\BBD Graduate Program\\C\\MovieRecommender\\XamCam\\XamCam.iOS\\obj\\",
+      "projectPath": "C:\\Users\\bbdnet2378\\Desktop\\Grad Level Up\\Java and C#\\MovieRecommender\\XamCam\\XamCam.iOS\\XamCam.iOS.csproj",
+      "packagesPath": "C:\\Users\\bbdnet2378\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\bbdnet2378\\Desktop\\Grad Level Up\\Java and C#\\MovieRecommender\\XamCam\\XamCam.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\risel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\bbdnet2378\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1172,8 +1172,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\risel\\Documents\\BBD Graduate Program\\C\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj": {
-              "projectPath": "C:\\Users\\risel\\Documents\\BBD Graduate Program\\C\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj"
+            "C:\\Users\\bbdnet2378\\Desktop\\Grad Level Up\\Java and C#\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj": {
+              "projectPath": "C:\\Users\\bbdnet2378\\Desktop\\Grad Level Up\\Java and C#\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj"
             }
           }
         }

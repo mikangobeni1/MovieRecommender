@@ -1,21 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\risel\\Documents\\BBD Graduate Program\\C\\MovieRecommender\\XamCam\\XamCam.Android\\XamCam.Android.csproj": {}
+    "C:\\Users\\bbdnet2378\\Desktop\\Grad Level Up\\Java and C#\\MovieRecommender\\XamCam\\XamCam.Android\\XamCam.Android.csproj": {}
   },
   "projects": {
-    "C:\\Users\\risel\\Documents\\BBD Graduate Program\\C\\MovieRecommender\\XamCam\\XamCam.Android\\XamCam.Android.csproj": {
+    "C:\\Users\\bbdnet2378\\Desktop\\Grad Level Up\\Java and C#\\MovieRecommender\\XamCam\\XamCam.Android\\XamCam.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\risel\\Documents\\BBD Graduate Program\\C\\MovieRecommender\\XamCam\\XamCam.Android\\XamCam.Android.csproj",
+        "projectUniqueName": "C:\\Users\\bbdnet2378\\Desktop\\Grad Level Up\\Java and C#\\MovieRecommender\\XamCam\\XamCam.Android\\XamCam.Android.csproj",
         "projectName": "XamCam.Android",
-        "projectPath": "C:\\Users\\risel\\Documents\\BBD Graduate Program\\C\\MovieRecommender\\XamCam\\XamCam.Android\\XamCam.Android.csproj",
-        "packagesPath": "C:\\Users\\risel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\risel\\Documents\\BBD Graduate Program\\C\\MovieRecommender\\XamCam\\XamCam.Android\\obj\\",
+        "projectPath": "C:\\Users\\bbdnet2378\\Desktop\\Grad Level Up\\Java and C#\\MovieRecommender\\XamCam\\XamCam.Android\\XamCam.Android.csproj",
+        "packagesPath": "C:\\Users\\bbdnet2378\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bbdnet2378\\Desktop\\Grad Level Up\\Java and C#\\MovieRecommender\\XamCam\\XamCam.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
-          "C:\\Users\\risel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bbdnet2378\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "C:\\Users\\risel\\Documents\\BBD Graduate Program\\C\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj": {
-                "projectPath": "C:\\Users\\risel\\Documents\\BBD Graduate Program\\C\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj"
+              "C:\\Users\\bbdnet2378\\Desktop\\Grad Level Up\\Java and C#\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj": {
+                "projectPath": "C:\\Users\\bbdnet2378\\Desktop\\Grad Level Up\\Java and C#\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj"
               }
             }
           }
@@ -70,17 +70,17 @@
         }
       }
     },
-    "C:\\Users\\risel\\Documents\\BBD Graduate Program\\C\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj": {
+    "C:\\Users\\bbdnet2378\\Desktop\\Grad Level Up\\Java and C#\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\risel\\Documents\\BBD Graduate Program\\C\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj",
+        "projectUniqueName": "C:\\Users\\bbdnet2378\\Desktop\\Grad Level Up\\Java and C#\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj",
         "projectName": "XamCam",
-        "projectPath": "C:\\Users\\risel\\Documents\\BBD Graduate Program\\C\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj",
-        "packagesPath": "C:\\Users\\risel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\risel\\Documents\\BBD Graduate Program\\C\\MovieRecommender\\XamCam\\XamCam\\obj\\",
+        "projectPath": "C:\\Users\\bbdnet2378\\Desktop\\Grad Level Up\\Java and C#\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj",
+        "packagesPath": "C:\\Users\\bbdnet2378\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bbdnet2378\\Desktop\\Grad Level Up\\Java and C#\\MovieRecommender\\XamCam\\XamCam\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\risel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bbdnet2378\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -135,7 +135,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
