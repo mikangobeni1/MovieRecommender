@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace XamCam
 {
@@ -24,6 +25,15 @@ namespace XamCam
         {
             movies = new ObservableCollection<Movies>();
             similarMovies();
+        }
+
+        public async Task<ObservableCollection<Movies>> SuggestedMovie(string genreId, int age)
+        {
+            MovieApiCaller movieApiCaller = new MovieApiCaller();
+
+            var response = await movieApiCaller.GetSuggestedMovieDetail(genreId, age);
+
+            return response;
         }
 
         private void similarMovies()

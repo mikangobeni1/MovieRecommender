@@ -2549,15 +2549,6 @@ C:\Users\bbdnet2378\Desktop\Grad Level Up\Java and C#\MovieRecommender\XamCam\Xa
 C:\Users\bbdnet2378\Desktop\Grad Level Up\Java and C#\MovieRecommender\XamCam\XamCam.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Users\bbdnet2378\Desktop\Grad Level Up\Java and C#\MovieRecommender\XamCam\XamCam.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\bbdnet2378\Desktop\Grad Level Up\Java and C#\MovieRecommender\XamCam\XamCam.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
-C:\Users\bbdnet2061\GRAD\C# Project\XamCam\MovieRecommender\XamCam\XamCam.Android\bin\Debug\XamCam.Android.dll
-C:\Users\bbdnet2061\GRAD\C# Project\XamCam\MovieRecommender\XamCam\XamCam.Android\bin\Debug\XamCam.Android.pdb
-C:\Users\bbdnet2061\GRAD\C# Project\XamCam\MovieRecommender\XamCam\XamCam.Android\bin\Debug\com.parallelcodes.XamCam.apk
-C:\Users\bbdnet2061\GRAD\C# Project\XamCam\MovieRecommender\XamCam\XamCam.Android\bin\Debug\com.parallelcodes.XamCam.aab
-C:\Users\bbdnet2061\GRAD\C# Project\XamCam\MovieRecommender\XamCam\XamCam.Android\bin\Debug\com.parallelcodes.XamCam-Signed.aab
-C:\Users\bbdnet2061\GRAD\C# Project\XamCam\MovieRecommender\XamCam\XamCam.Android\bin\Debug\com.parallelcodes.XamCam-Signed.apk
-C:\Users\bbdnet2061\GRAD\C# Project\XamCam\MovieRecommender\XamCam\XamCam.Android\bin\Debug\com.parallelcodes.XamCam-Signed.apk.idsig
-C:\Users\bbdnet2061\GRAD\C# Project\XamCam\MovieRecommender\XamCam\XamCam.Android\bin\Debug\XamCam.dll
-C:\Users\bbdnet2061\GRAD\C# Project\XamCam\MovieRecommender\XamCam\XamCam.Android\bin\Debug\XamCam.pdb
 C:\Users\bbdnet2061\GRAD\C# Project\XamCam\MovieRecommender\XamCam\XamCam.Android\obj\Debug\90\MonoAndroid,Version=v9.0.AssemblyAttributes.cs
 C:\Users\bbdnet2061\GRAD\C# Project\XamCam\MovieRecommender\XamCam\XamCam.Android\obj\Debug\90\build.props
 C:\Users\bbdnet2061\GRAD\C# Project\XamCam\MovieRecommender\XamCam\XamCam.Android\obj\Debug\90\adb.props
@@ -2580,6 +2571,15 @@ C:\Users\bbdnet2061\GRAD\C# Project\XamCam\MovieRecommender\XamCam\XamCam.Androi
 C:\Users\bbdnet2061\GRAD\C# Project\XamCam\MovieRecommender\XamCam\XamCam.Android\obj\Debug\90\R.txt
 C:\Users\bbdnet2061\GRAD\C# Project\XamCam\MovieRecommender\XamCam\XamCam.Android\obj\Debug\90\R.cs.flag
 C:\Users\bbdnet2061\GRAD\C# Project\XamCam\MovieRecommender\XamCam\XamCam.Android\obj\Debug\90\XamCam.Android.csproj.CoreCompileInputs.cache
+C:\Users\bbdnet2061\GRAD\C# Project\XamCam\MovieRecommender\XamCam\XamCam.Android\bin\Debug\XamCam.Android.dll
+C:\Users\bbdnet2061\GRAD\C# Project\XamCam\MovieRecommender\XamCam\XamCam.Android\bin\Debug\XamCam.Android.pdb
+C:\Users\bbdnet2061\GRAD\C# Project\XamCam\MovieRecommender\XamCam\XamCam.Android\bin\Debug\com.parallelcodes.XamCam.apk
+C:\Users\bbdnet2061\GRAD\C# Project\XamCam\MovieRecommender\XamCam\XamCam.Android\bin\Debug\com.parallelcodes.XamCam.aab
+C:\Users\bbdnet2061\GRAD\C# Project\XamCam\MovieRecommender\XamCam\XamCam.Android\bin\Debug\com.parallelcodes.XamCam-Signed.aab
+C:\Users\bbdnet2061\GRAD\C# Project\XamCam\MovieRecommender\XamCam\XamCam.Android\bin\Debug\com.parallelcodes.XamCam-Signed.apk
+C:\Users\bbdnet2061\GRAD\C# Project\XamCam\MovieRecommender\XamCam\XamCam.Android\bin\Debug\com.parallelcodes.XamCam-Signed.apk.idsig
+C:\Users\bbdnet2061\GRAD\C# Project\XamCam\MovieRecommender\XamCam\XamCam.Android\bin\Debug\XamCam.dll
+C:\Users\bbdnet2061\GRAD\C# Project\XamCam\MovieRecommender\XamCam\XamCam.Android\bin\Debug\XamCam.pdb
 C:\Users\bbdnet2061\GRAD\C# Project\XamCam\MovieRecommender\XamCam\XamCam.Android\obj\Debug\90\XamlC.stamp
 C:\Users\bbdnet2061\GRAD\C# Project\XamCam\MovieRecommender\XamCam\XamCam.Android\obj\Debug\90\XamCam.Android.csproj.CopyComplete
 C:\Users\bbdnet2061\GRAD\C# Project\XamCam\MovieRecommender\XamCam\XamCam.Android\obj\Debug\90\XamCam.Android.dll
@@ -2626,6 +2626,8 @@ C:\Users\bbdnet2061\GRAD\C# Project\XamCam\MovieRecommender\XamCam\XamCam.Androi
 C:\Users\bbdnet2061\GRAD\C# Project\XamCam\MovieRecommender\XamCam\XamCam.Android\obj\Debug\90\android\assets\FormsViewGroup.dll
 C:\Users\bbdnet2061\GRAD\C# Project\XamCam\MovieRecommender\XamCam\XamCam.Android\obj\Debug\90\android\assets\FormsViewGroup.pdb
 C:\Users\bbdnet2061\GRAD\C# Project\XamCam\MovieRecommender\XamCam\XamCam.Android\obj\Debug\90\android\assets\Java.Interop.dll
+C:\Users\bbdnet2061\GRAD\C# Project\XamCam\MovieRecommender\XamCam\XamCam.Android\obj\Debug\90\android\assets\Microsoft.CSharp.dll
+C:\Users\bbdnet2061\GRAD\C# Project\XamCam\MovieRecommender\XamCam\XamCam.Android\obj\Debug\90\android\assets\Microsoft.CSharp.pdb
 C:\Users\bbdnet2061\GRAD\C# Project\XamCam\MovieRecommender\XamCam\XamCam.Android\obj\Debug\90\android\assets\Mono.Android.dll
 C:\Users\bbdnet2061\GRAD\C# Project\XamCam\MovieRecommender\XamCam\XamCam.Android\obj\Debug\90\android\assets\Mono.Android.pdb
 C:\Users\bbdnet2061\GRAD\C# Project\XamCam\MovieRecommender\XamCam\XamCam.Android\obj\Debug\90\android\assets\Mono.Security.dll
@@ -3064,3 +3066,4 @@ C:\Users\bbdnet2061\GRAD\C# Project\XamCam\MovieRecommender\XamCam\XamCam.Androi
 C:\Users\bbdnet2061\GRAD\C# Project\XamCam\MovieRecommender\XamCam\XamCam.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Users\bbdnet2061\GRAD\C# Project\XamCam\MovieRecommender\XamCam\XamCam.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\bbdnet2061\GRAD\C# Project\XamCam\MovieRecommender\XamCam\XamCam.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\bbdnet2061\GRAD\C# Project\XamCam\MovieRecommender\XamCam\XamCam.Android\bin\Debug\XamCam.dll.mdb

@@ -180,8 +180,13 @@ namespace XamCam
             }
             else
             {
+                var ageAndEmotionGenre = new AgeAndEmotionGenre
+                {
+                    emotionGenre = emotion,
+                    age = 0,
+                };
                 // go to page
-                await Navigation.PushAsync(new GenreSelectionPage());
+                await Navigation.PushAsync(new GenreSelectionPage(ageAndEmotionGenre));
                 //await DisplayAlert("", "Emotion is: " + emotion, "Ok");
             }
 

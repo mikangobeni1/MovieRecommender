@@ -34,15 +34,12 @@ namespace XamCam
         //    return genre;
         //}
 
-        public async Task<string> GetSuggestedMovie()
+        private async Task<string> GetSuggestedMovie(string genreIDs, int age)
         {
-            
-            string genres = "35, 27";
-            int age = 17;
 
             string showAdultContent = age > 18 ? "true" : "false";
 
-            string response = await client.GetStringAsync($"{baseURL}/discover/movie?api_key=34728b95f5f9dfc0f413206f25ffd212&language=en-US&sort_by=vote_count.desc&page=1&with_genres={genres}&include_adult={showAdultContent}");
+            string response = await client.GetStringAsync($"{baseURL}/discover/movie?api_key=34728b95f5f9dfc0f413206f25ffd212&language=en-US&sort_by=vote_count.desc&page=1&with_genres={genreIDs}&include_adult={showAdultContent}");
 
             JObject jsonRes = JObject.Parse(response);
 
@@ -50,14 +47,13 @@ namespace XamCam
             int randomIndex = new Random().Next(1, responseLength);
             var randomlySelectedMovie = jsonRes["results"][randomIndex];
             //Console.WriteLine((int)randomlySelectedMovie["id"])
-
             return (string)randomlySelectedMovie["id"];
         }
 
-        public async Task<ObservableCollection<Movies>> GetSuggestedMovieDetail()
+        public async Task<ObservableCollection<Movies>> GetSuggestedMovieDetail(string genreIDs, int age)
         {
 
-            selectedMovieID = await GetSuggestedMovie();
+            selectedMovieID = await GetSuggestedMovie(genreIDs, age);
             string response = await client.GetStringAsync($"{baseURL}/movie/{selectedMovieID}?api_key=34728b95f5f9dfc0f413206f25ffd212&language=en-US");
             JObject jsonRes = JObject.Parse(response);
             suggestedMovie = new ObservableCollection<Movies>();

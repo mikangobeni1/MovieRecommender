@@ -31,7 +31,7 @@ namespace XamCam
             CaptureFace();
         }
 
-        private async void CaptureFace()
+        public async void CaptureFace()
         {
             try
             {
@@ -100,15 +100,24 @@ namespace XamCam
                     // sets image on app
                     //   imgCam.Source = ImageSource.FromStream(() => { return photo.GetStream(); });
 
+                    var ageAndEmotionGenre = new AgeAndEmotionGenre
+                    {
+                        emotionGenre = maxEmotionName,
+                        age = age,
+                    };
+
+                    await Navigation.PushAsync(new GenreSelectionPage(ageAndEmotionGenre));
+
                 }
             }
             catch (Exception ex)
             {
                 await DisplayAlert("Retake Biometric", "Show whole face", "Ok");
+                // go back to main page
+                await Navigation.PopAsync();
             }
 
-            // go back to main page
-            await Navigation.PopAsync();
+
 
         }
 
