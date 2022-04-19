@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\GradProgramme\\LevelUps\\MovieRecommender\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj": {}
+    "C:\\Users\\bbdnet2061\\GRAD\\C# Project\\XamCam\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj": {}
   },
   "projects": {
-    "C:\\GradProgramme\\LevelUps\\MovieRecommender\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj": {
+    "C:\\Users\\bbdnet2061\\GRAD\\C# Project\\XamCam\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GradProgramme\\LevelUps\\MovieRecommender\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj",
+        "projectUniqueName": "C:\\Users\\bbdnet2061\\GRAD\\C# Project\\XamCam\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj",
         "projectName": "XamCam",
-        "projectPath": "C:\\GradProgramme\\LevelUps\\MovieRecommender\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj",
-        "packagesPath": "C:\\Users\\bbdnet2579\\.nuget\\packages\\",
-        "outputPath": "C:\\GradProgramme\\LevelUps\\MovieRecommender\\MovieRecommender\\XamCam\\XamCam\\obj\\",
+        "projectPath": "C:\\Users\\bbdnet2061\\GRAD\\C# Project\\XamCam\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj",
+        "packagesPath": "C:\\Users\\bbdnet2061\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bbdnet2061\\GRAD\\C# Project\\XamCam\\MovieRecommender\\XamCam\\XamCam\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\bbdnet2579\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bbdnet2061\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -46,6 +44,10 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "dependencies": {
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
