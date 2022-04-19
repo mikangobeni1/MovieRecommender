@@ -181,7 +181,7 @@ namespace XamCam
             else
             {
                 // go to page
-                await Navigation.PushAsync(new MoviePage());
+                await Navigation.PushAsync(new GenreSelectionPage());
                 //await DisplayAlert("", "Emotion is: " + emotion, "Ok");
             }
 

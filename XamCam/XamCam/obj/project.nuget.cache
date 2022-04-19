@@ -1,10 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "Bv+ZyLjsVEauuTbkhrS0cJdyNArbRZ7iORKFplkoyd+B4KuJOT1sPs9fvyTYuVPzmHaDhrLXPm0a7BWd7gwCbQ==",
+  "dgSpecHash": "XAtEzr3uQk64dxbjoQXNraThGXiuxQ89dE0VLvij/TXIsvqMKazuXT3hnj0bk+9xam43vdPmY6HqukapWFgixQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\bbdnet2061\\GRAD\\C# Project\\XamCam\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\bbdnet2061\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\bbdnet2061\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\bbdnet2061\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\bbdnet2061\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
