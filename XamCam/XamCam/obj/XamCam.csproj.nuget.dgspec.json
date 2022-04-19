@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bbdnet2378\\Desktop\\Grad Level Up\\Java and C#\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj": {}
+    "C:\\Users\\bbdnet2061\\GRAD\\C# Project\\XamCam\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bbdnet2378\\Desktop\\Grad Level Up\\Java and C#\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj": {
+    "C:\\Users\\bbdnet2061\\GRAD\\C# Project\\XamCam\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bbdnet2378\\Desktop\\Grad Level Up\\Java and C#\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj",
+        "projectUniqueName": "C:\\Users\\bbdnet2061\\GRAD\\C# Project\\XamCam\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj",
         "projectName": "XamCam",
-        "projectPath": "C:\\Users\\bbdnet2378\\Desktop\\Grad Level Up\\Java and C#\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj",
-        "packagesPath": "C:\\Users\\bbdnet2378\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bbdnet2378\\Desktop\\Grad Level Up\\Java and C#\\MovieRecommender\\XamCam\\XamCam\\obj\\",
+        "projectPath": "C:\\Users\\bbdnet2061\\GRAD\\C# Project\\XamCam\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj",
+        "packagesPath": "C:\\Users\\bbdnet2061\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bbdnet2061\\GRAD\\C# Project\\XamCam\\MovieRecommender\\XamCam\\XamCam\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\bbdnet2378\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bbdnet2061\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
