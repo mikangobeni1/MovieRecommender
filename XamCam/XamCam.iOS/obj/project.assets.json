@@ -1146,29 +1146,21 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\bbdnet2579\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\risel\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\GradProgramme\\LevelUps\\MovieRecommender\\MovieRecommender\\XamCam\\XamCam.iOS\\XamCam.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\risel\\Documents\\BBD Graduate Program\\C\\MovieRecommender\\XamCam\\XamCam.iOS\\XamCam.iOS.csproj",
       "projectName": "XamCam.iOS",
-      "projectPath": "C:\\GradProgramme\\LevelUps\\MovieRecommender\\MovieRecommender\\XamCam\\XamCam.iOS\\XamCam.iOS.csproj",
-      "packagesPath": "C:\\Users\\bbdnet2579\\.nuget\\packages\\",
-      "outputPath": "C:\\GradProgramme\\LevelUps\\MovieRecommender\\MovieRecommender\\XamCam\\XamCam.iOS\\obj\\",
+      "projectPath": "C:\\Users\\risel\\Documents\\BBD Graduate Program\\C\\MovieRecommender\\XamCam\\XamCam.iOS\\XamCam.iOS.csproj",
+      "packagesPath": "C:\\Users\\risel\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\risel\\Documents\\BBD Graduate Program\\C\\MovieRecommender\\XamCam\\XamCam.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\bbdnet2579\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\risel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"
@@ -1180,8 +1172,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\GradProgramme\\LevelUps\\MovieRecommender\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj": {
-              "projectPath": "C:\\GradProgramme\\LevelUps\\MovieRecommender\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj"
+            "C:\\Users\\risel\\Documents\\BBD Graduate Program\\C\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj": {
+              "projectPath": "C:\\Users\\risel\\Documents\\BBD Graduate Program\\C\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj"
             }
           }
         }
