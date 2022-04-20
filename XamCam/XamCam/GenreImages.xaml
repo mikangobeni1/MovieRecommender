@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamCam.GenreImages"
+    NavigationPage.HasBackButton="False"
+             >
+    <NavigationPage.TitleView>
+        <Grid>
+            <ImageButton
+                Clicked="BackNav_Clicked"
+                Source="back.png"
+                WidthRequest="20"
+                BackgroundColor="Transparent"
+                Margin="10,0,0,0"
+                HorizontalOptions="Start" />
+        </Grid>
+    </NavigationPage.TitleView>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <ScrollView 
+            Grid.Row="0"
+            Orientation="Vertical"
+            Scrolled="Handle_Scrolled"
+            x:Name="scroller"
+            >
+            <StackLayout>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+
+                        <RowDefinition Height="Auto"/>
+
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+
+                    <Label Grid.Row="0"
+                           Grid.Column="0"
+                           x:Name="lblCHooseImage"
+                           Text="Choose 1" 
+                           TextDecorations="None"
+                           FontSize="20"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           TextColor="#707070" />
+                    <Frame 
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        WidthRequest="180"
+                        HorizontalOptions="Start"
+                        BackgroundColor="Black" 
+                        Padding="0" 
+                        Margin="10, 0, 0 , 0"
+                        HasShadow="True" 
+                        CornerRadius="10">
+                        <Image 
+                           Aspect="AspectFill"
+                           Source="comedy.jpg"
+                           x:Name="genre_comedy">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer
+                            Tapped="Genre_Clicked"
+                            NumberOfTapsRequired="1" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </Frame>
+
+                    <Frame 
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        WidthRequest="180"
+                        HorizontalOptions="End"
+                        BackgroundColor="Black" 
+                        Padding="0" 
+                        Margin="0, 0, 10 , 0"
+                        HasShadow="True" 
+                        CornerRadius="10">
+
+                        <Image 
+                           Aspect="AspectFill"
+                           Source="action.jpg"
+                           HeightRequest="130"
+                           HorizontalOptions="End"
+                           x:Name="genre_action">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer
+                            Tapped="Genre_Clicked"
+                            NumberOfTapsRequired="1" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </Frame>
+
+                    <Frame 
+                        Grid.Row="2"
+                        Grid.Column="0"
+                        WidthRequest="180"
+                        HorizontalOptions="Start"
+                        BackgroundColor="Black" 
+                        Padding="0" 
+                        Margin="10, 0, 0 , 0"
+                        HasShadow="True" 
+                        CornerRadius="10">
+
+                        <Image 
+                           Aspect="AspectFill"
+                           Source="romance.jpg"
+                           HeightRequest="130"
+                           HorizontalOptions="Start"
+                           x:Name="genre_romance">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer
+                            Tapped="Genre_Clicked"
+                            NumberOfTapsRequired="1" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </Frame>
+
+                    <Frame 
+                        Grid.Row="2"
+                        Grid.Column="0"
+                        WidthRequest="180"
+                        HorizontalOptions="End"
+                        BackgroundColor="Black" 
+                        Padding="0" 
+                        Margin="0, 0, 10 , 0"
+                        HasShadow="True" 
+                        CornerRadius="10">
+
+                        <Image 
+                           Aspect="AspectFill"
+                           Source="scifi.jpg"
+                           HeightRequest="130"
+                           x:Name="genre_scifi">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer
+                            Tapped="Genre_Clicked"
+                            NumberOfTapsRequired="1" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </Frame>
+                    <Frame 
+                        Grid.Row="3"
+                        Grid.Column="0"
+                        WidthRequest="180"
+                        HorizontalOptions="Start"
+                        BackgroundColor="Black" 
+                        Padding="0" 
+                        Margin="10, 0, 0, 0"
+                        HasShadow="True" 
+                        CornerRadius="10">
+                        <Image 
+                           Aspect="AspectFill"
+                           Source="horror.PNG"
+                           HeightRequest="130"
+                          x:Name="genre_horror">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer
+                                Tapped="Genre_Clicked"
+                                NumberOfTapsRequired="1" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </Frame>
+                    <Frame 
+                        Grid.Row="3"
+                        Grid.Column="0"
+                        WidthRequest="180"
+                        HorizontalOptions="End"
+                        BackgroundColor="Black" 
+                        Padding="0" 
+                        Margin="0, 0, 10, 0"
+                        HasShadow="True" 
+                        CornerRadius="10">
+                        <Image 
+                           Aspect="AspectFill"
+                           Source="family.jpg"
+                           HeightRequest="130"
+                           x:Name="genre_family">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer
+                            Tapped="Genre_Clicked"
+                            NumberOfTapsRequired="1" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </Frame>
+
+                    <Button 
+                        IsVisible="False"
+                        Grid.Row="4"
+                        Grid.Column="0"
+                        Margin="0,0,0,50" 
+                        x:Name="btnProceedWithGenres"
+                        Text="Proceed"
+                        Clicked="Proceed_Clicked"
+                        BackgroundColor="#F1F1F1"
+                        TextColor="#707070"
+                        BorderRadius="10"
+                        WidthRequest="300"
+                        VerticalOptions="End"
+                        HorizontalOptions="Center"
+                    />
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+        <Image  Grid.Row="0" 
+                        Source="downarrow.png"
+                        x:Name="fab"
+                        HorizontalOptions="End" 
+                        HeightRequest="20" 
+                        Margin="0,0,10,10" 
+                        VerticalOptions="End"
+                
+                >
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                            Tapped="NavArrow_Clicked"
+                            NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+        </Image>
+
+    </Grid>
+</ContentPage>

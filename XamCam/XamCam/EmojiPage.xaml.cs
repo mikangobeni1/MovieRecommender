@@ -58,11 +58,11 @@ namespace XamCam
             f_anger.IsVisible = false;
             f_sadness.IsVisible = false;
         }
+
         void onFear(object sender, EventArgs args)
         {
             fear();
             btnEmojiProceed.IsVisible = true;
-
         }
 
         void fear()
@@ -77,12 +77,14 @@ namespace XamCam
             f_anger.IsVisible = false;
             f_sadness.IsVisible = false;
         }
+
         void onSurprised(object sender, EventArgs args)
         {
             surprise();
             btnEmojiProceed.IsVisible = true;
 
         }
+
         void surprise()
         {
             f_surprised.IsVisible = true;
@@ -100,8 +102,8 @@ namespace XamCam
         {
             neutral();
             btnEmojiProceed.IsVisible = true;
-
         }
+
         void neutral()
         {
             f_neutral.IsVisible = true;
@@ -139,6 +141,7 @@ namespace XamCam
             btnEmojiProceed.IsVisible = true;
 
         }
+
         void anger()
         {
             f_anger.IsVisible = true;
@@ -158,6 +161,7 @@ namespace XamCam
             btnEmojiProceed.IsVisible = true;
 
         }
+
         void sadness()
         {
             f_sadness.IsVisible = true;
@@ -180,12 +184,14 @@ namespace XamCam
             }
             else
             {
+                var ageEmotionGenre = new AgeEmotionGenre
+                {
+                    emotion = emotion,
+                    age = 0,
+                };
                 // go to page
-                await Navigation.PushAsync(new MoviePage());
-                //await DisplayAlert("", "Emotion is: " + emotion, "Ok");
+                await Navigation.PushAsync(new GenreSelectionPage(ageEmotionGenre));
             }
-
-
         }
 
         float countInterval;
@@ -202,66 +208,66 @@ namespace XamCam
             
             // interact with UI elements
             Device.StartTimer(TimeSpan.FromSeconds(countInterval), () =>
+            {
+                if (mainCounter <= dice)
+                {
+                    Console.WriteLine("1st half");
+
+                    Device.BeginInvokeOnMainThread(() =>
                     {
-                        if (mainCounter <= dice)
+
+                        switch (counter)
                         {
-                            Console.WriteLine("1st half");
-
-                            Device.BeginInvokeOnMainThread(() =>
-                            {
-
-                                switch (counter)
+                            case 1:
                                 {
-                                    case 1:
-                                        {
-                                            disgust();
-                                            break;
-                                        }
-                                    case 2:
-                                        {
-                                            anger();
-                                            break;
-                                        }
-                                    case 3:
-                                        {
-                                            neutral();
-                                            break;
-                                        }
-                                    case 4:
-                                        {
-                                            sadness();
-                                            break;
-                                        }
-                                    case 5:
-                                        {
-                                            surprise();
-                                            break;
-                                        }
-                                    case 6:
-                                        {
-                                            fear();
-                                            break;
-                                        }
-                                    default:
-                                        {
-                                            happiness();
-                                            break;
-                                        }
+                                    disgust();
+                                    break;
                                 }
-                                if (counter == 7) counter = 1;
-                                else { counter++; }
-                                mainCounter++;
-                            });
-                            return true;
+                            case 2:
+                                {
+                                    anger();
+                                    break;
+                                }
+                            case 3:
+                                {
+                                    neutral();
+                                    break;
+                                }
+                            case 4:
+                                {
+                                    sadness();
+                                    break;
+                                }
+                            case 5:
+                                {
+                                    surprise();
+                                    break;
+                                }
+                            case 6:
+                                {
+                                    fear();
+                                    break;
+                                }
+                            default:
+                                {
+                                    happiness();
+                                    break;
+                                }
                         }
-                        else
-                        {
-                            btnRandomise.IsVisible = true;
-                            btnEmojiProceed.IsVisible = true;
-                            return false;
-               
-                        }
+                        if (counter == 7) counter = 1;
+                        else { counter++; }
+                        mainCounter++;
                     });
+                    return true;
+                }
+                else
+                {
+                    btnRandomise.IsVisible = true;
+                    btnEmojiProceed.IsVisible = true;
+                    return false;
+               
+                }
+            });
         }
     }
 }
