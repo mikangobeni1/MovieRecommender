@@ -95,8 +95,9 @@ namespace XamCam
                         age = age,
                     };
 
+                    var previousPage = Navigation.NavigationStack.LastOrDefault();
                     await Navigation.PushAsync(new GenreSelectionPage(ageEmotionGenre));
-
+                    Navigation.RemovePage(previousPage);
                 }
             }
             catch (Exception ex)

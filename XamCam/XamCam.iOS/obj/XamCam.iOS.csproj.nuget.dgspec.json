@@ -1,25 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bbdnet2061\\GRAD\\C# Project\\XamCam\\MovieRecommender\\XamCam\\XamCam.iOS\\XamCam.iOS.csproj": {}
+    "C:\\Users\\bbdnet2378\\Desktop\\Grad Level Up\\MovieRecommender\\XamCam\\XamCam.iOS\\XamCam.iOS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bbdnet2061\\GRAD\\C# Project\\XamCam\\MovieRecommender\\XamCam\\XamCam.iOS\\XamCam.iOS.csproj": {
+    "C:\\Users\\bbdnet2378\\Desktop\\Grad Level Up\\MovieRecommender\\XamCam\\XamCam.iOS\\XamCam.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bbdnet2061\\GRAD\\C# Project\\XamCam\\MovieRecommender\\XamCam\\XamCam.iOS\\XamCam.iOS.csproj",
+        "projectUniqueName": "C:\\Users\\bbdnet2378\\Desktop\\Grad Level Up\\MovieRecommender\\XamCam\\XamCam.iOS\\XamCam.iOS.csproj",
         "projectName": "XamCam.iOS",
-        "projectPath": "C:\\Users\\bbdnet2061\\GRAD\\C# Project\\XamCam\\MovieRecommender\\XamCam\\XamCam.iOS\\XamCam.iOS.csproj",
-        "packagesPath": "C:\\Users\\bbdnet2061\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bbdnet2061\\GRAD\\C# Project\\XamCam\\MovieRecommender\\XamCam\\XamCam.iOS\\obj\\",
+        "projectPath": "C:\\Users\\bbdnet2378\\Desktop\\Grad Level Up\\MovieRecommender\\XamCam\\XamCam.iOS\\XamCam.iOS.csproj",
+        "packagesPath": "C:\\Users\\bbdnet2378\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bbdnet2378\\Desktop\\Grad Level Up\\MovieRecommender\\XamCam\\XamCam.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\bbdnet2061\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\bbdnet2378\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -32,8 +28,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "C:\\Users\\bbdnet2061\\GRAD\\C# Project\\XamCam\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj": {
-                "projectPath": "C:\\Users\\bbdnet2061\\GRAD\\C# Project\\XamCam\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj"
+              "C:\\Users\\bbdnet2378\\Desktop\\Grad Level Up\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj": {
+                "projectPath": "C:\\Users\\bbdnet2378\\Desktop\\Grad Level Up\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj"
               }
             }
           }
@@ -65,21 +61,17 @@
         }
       }
     },
-    "C:\\Users\\bbdnet2061\\GRAD\\C# Project\\XamCam\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj": {
+    "C:\\Users\\bbdnet2378\\Desktop\\Grad Level Up\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bbdnet2061\\GRAD\\C# Project\\XamCam\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj",
+        "projectUniqueName": "C:\\Users\\bbdnet2378\\Desktop\\Grad Level Up\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj",
         "projectName": "XamCam",
-        "projectPath": "C:\\Users\\bbdnet2061\\GRAD\\C# Project\\XamCam\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj",
-        "packagesPath": "C:\\Users\\bbdnet2061\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bbdnet2061\\GRAD\\C# Project\\XamCam\\MovieRecommender\\XamCam\\XamCam\\obj\\",
+        "projectPath": "C:\\Users\\bbdnet2378\\Desktop\\Grad Level Up\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj",
+        "packagesPath": "C:\\Users\\bbdnet2378\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bbdnet2378\\Desktop\\Grad Level Up\\MovieRecommender\\XamCam\\XamCam\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\bbdnet2061\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\bbdnet2378\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
