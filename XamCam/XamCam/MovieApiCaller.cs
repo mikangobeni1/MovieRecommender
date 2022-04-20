@@ -17,24 +17,11 @@ namespace XamCam
 
 		private readonly string imageBaseURL = "https://image.tmdb.org/t/p/original";
 
-
 		public static string selectedMovieID;
 		public ObservableCollection<Movies> suggestedMovie { get; private set; }
 		public ObservableCollection<Movies> similarMovies { get; private set; }
 
 		public MovieApiCaller() { }
-
-		// Find Genre based on emotion passed
-		//private string EmotionToGenre()
-		//{
-
-		//    //var selfieResults = new SelfiePage();
-		//    //var emotionAndAge = selfieResults.CaptureFace();
-		//    var emoticon = new EmojiPage();
-
-
-		//    return genre;
-		//}
 
 		private async Task<string> GetSuggestedMovie(string genreIDs, int age)
 		{
@@ -51,7 +38,6 @@ namespace XamCam
 			//Console.WriteLine((int)randomlySelectedMovie["id"])
 			return (string)randomlySelectedMovie["id"];
 		}
-
 		public async Task<ObservableCollection<Movies>> GetSuggestedMovieDetail(string genreIDs, int age)
 		{
 
@@ -99,8 +85,5 @@ namespace XamCam
 
 			return similarMovies;
 		}
-
-
 	}
-
 }

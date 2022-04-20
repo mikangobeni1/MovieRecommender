@@ -46,20 +46,6 @@ namespace XamCam
         {
             Navigation.PopAsync();
         }
-        
-        private  void NavArrow_Clicked(object sender, EventArgs e)
-        {
-            var y = scroller.ScrollY;
-
-            if (y <= 5)
-            {
-                scroller.ScrollToAsync(0, 248, true);
-            }
-            else if (y >= 248)
-            {
-                scroller.ScrollToAsync(0, 0, true);
-            }
-        }
 
         private void Proceed_Clicked()
         {
@@ -67,9 +53,9 @@ namespace XamCam
             if (!selectedGenre.Equals(null))
             {
                 btnProceedWithGenres.IsVisible = true;
-                scroller.ScrollToAsync(0, 248, true);
             }
         }
+
         private void Genre_Clicked(object sender, EventArgs e)
         {
 
@@ -90,31 +76,6 @@ namespace XamCam
 
             Proceed_Clicked();
         }
-
-        void Handle_Scrolled(object sender, ScrolledEventArgs e)
-        {
-            var y = scroller.ScrollY;
-            var x = scroller.ScrollX;
-
-            if (y <= 5)
-            {
-                fab.IsVisible = true;
-                // go up
-                fab.Source = ImageSource.FromFile("downarrow.png");
-            }
-            else if (y >= 248)
-            {
-                fab.IsVisible = true;
-                // go down
-                fab.Source = ImageSource.FromFile("uparrow.png");
-            }
-            else
-            {
-                // middle
-                fab.IsVisible = false;
-            }
-        }
-
         private async void Proceed_Clicked(object sender, EventArgs e)
         {
             var ageEmotionGenre = new AgeEmotionGenre

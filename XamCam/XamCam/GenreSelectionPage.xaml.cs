@@ -37,44 +37,53 @@ namespace XamCam
             switch (detectedEmotion)
             {
                 case "happiness":
-                    buttonImage1 = "Comedy.png";
-                    buttonImage2 = "Romance.png";
+                    buttonImage1 = "Comedyf.jpg";
+                    buttonImage2 = "Romancef.png";
                     break;
                 case "neutral":
-                    buttonImage1 = "SciFi.png";
-                    buttonImage2 = "Family.png";
+                    buttonImage1 = "SciFif.jpg";
+                    buttonImage2 = "Familyf.jpg";
                     break;
                 case "disgust":
                     buttonImage1 = "Action.png";
-                    buttonImage2 = "Comedy.png";
+                    buttonImage2 = "Comedyf.jpg";
                     break;
                 case "anger":
-                    buttonImage1 = "Action.png";
-                    buttonImage2 = "Comedy.png";
+                    buttonImage1 = "Actionf.jpg";
+                    buttonImage2 = "Comedyf.jpg";
                     break;
                 case "sadness":
-                    buttonImage1 = "Romance.png";
-                    buttonImage2 = "drama.png";
+                    buttonImage1 = "Romancef.png";
+                    buttonImage2 = "dramaf.jpg";
                     break;
                 case "fear":
-                    buttonImage1 = "Horror.png";
-                    buttonImage2 = "Romance.png";
+                    buttonImage1 = "Horrorf.jpg";
+                    buttonImage2 = "Romancef.png";
                     break;
                 case "surprise":
-                    buttonImage1 = "Comedy.png";
-                    buttonImage2 = "Romance.png";
+                    buttonImage1 = "Comedyf.jpg";
+                    buttonImage2 = "Romancef.png";
                     break;
                 default:
-                    buttonImage1 = "Comedy.png";
-                    buttonImage2 = "Family.png";
+                    buttonImage1 = "Comedyf.jpg";
+                    buttonImage2 = "Familyf.jpg";
                     break;
 
             }
 
             Label header = new Label
             {
-                Text = "Based on your emotions we believe these images represent want you want to watch",
+                Text = "Your detected emotion is " + detectedEmotion,
                 FontSize = 20,
+                HorizontalOptions = LayoutOptions.Center,
+                VerticalOptions = LayoutOptions.Center,
+                TextColor = Color.Black,
+            };
+
+            Label headerPick = new Label
+            {
+                Text = "Choose 1",
+                FontSize = 16,
                 HorizontalOptions = LayoutOptions.Center,
                 VerticalOptions = LayoutOptions.Center,
                 TextColor = Color.Black,
@@ -87,9 +96,10 @@ namespace XamCam
                 VerticalOptions = LayoutOptions.CenterAndExpand,
                 Aspect = Aspect.Fill,
                 HeightRequest = 200,
-                WidthRequest = 200
-
+                WidthRequest = 200,
+                CornerRadius = 10
             };
+
             imageButton1.Clicked += (sender, args) => DetermineGenre(buttonImage1);
 
             ImageButton imageButton2 = new ImageButton
@@ -99,7 +109,8 @@ namespace XamCam
                 VerticalOptions = LayoutOptions.CenterAndExpand,
                 Aspect = Aspect.Fill,
                 WidthRequest = 200,
-                HeightRequest = 200
+                HeightRequest = 200,
+                CornerRadius = 10
 
             };
             imageButton2.Clicked += (sender, args) => DetermineGenre(buttonImage2);
@@ -107,25 +118,30 @@ namespace XamCam
             Label moreGenres = new Label
             {
                 Text = "Did we get it wrong ?",
-                FontSize = 20,
+                FontSize = 16,
                 HorizontalOptions = LayoutOptions.Center,
                 VerticalOptions = LayoutOptions.Center,
                 TextColor = Color.Black,
             };
+            ColorTypeConverter newConverter = new ColorTypeConverter();
+            Color btnBackGroundColor = (Color)(newConverter.ConvertFromInvariantString("#F1F1F1"));
+            Color btnTextColor = (Color)(newConverter.ConvertFromInvariantString("#000000"));
 
             Button defaultGenreButton = new Button
             {
-                Text = "Not Feeling it?",
+                BackgroundColor = Color.Silver,
+                TextColor = btnTextColor,
+                CornerRadius = 10,
+                WidthRequest = 300,
+                Text = "Other options",
                 VerticalOptions = LayoutOptions.CenterAndExpand,
                 HorizontalOptions = LayoutOptions.Center
             };
             defaultGenreButton.Clicked += (sender, args) => NavigateToGenreImages();
-            // Add in correct page here
-
 
             Content = new StackLayout
             {
-                Children = { header, imageButton1, imageButton2, moreGenres, defaultGenreButton }
+                Children = { header, headerPick, imageButton1, imageButton2, moreGenres, defaultGenreButton }
             };
         }
 
@@ -152,13 +168,9 @@ namespace XamCam
                 case "Romance.png":
                     selectedGenre = "Romance";
                     break;
-                case "SciFi.png":
+                default:
                     selectedGenre = "SciFi";
                     break;
-                default:
-                    NavigateToGenreImages();
-                    break;
-
             }
 
             var ageEmotionGenre = new AgeEmotionGenre

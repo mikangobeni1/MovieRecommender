@@ -39,13 +39,10 @@ namespace XamCam
             Color backSectionBackgroundColor = (Color)(converter.ConvertFromInvariantString("#9A7245"));     
             ((NavigationPage)Application.Current.MainPage).BarTextColor = backSectionBackgroundColor;
 
-
-
             MapGenreToID(ageEmotionGenre);
 
             BindingContext = new MovieViewModel(selectedGenreIDs, age);
-            //MovieViewModel viewModel = new MovieViewModel();
-            //Console.WriteLine(viewModel.SuggestedMovie(selectedGenreIDs, age));
+
         }
 
         public void MapGenreToID(AgeEmotionGenre ageEmotionGenre)

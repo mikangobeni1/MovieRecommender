@@ -88,10 +88,6 @@ namespace XamCam
 
                     // greatest key
                     var maxEmotionName = emotions.FirstOrDefault(x => x.Value == maxEmotionValue).Key;
-                    await DisplayAlert("Emotion", "Max emotion is: " + maxEmotionName + " with score: " + maxEmotionValue, "Ok");
-
-                    // sets image on app
-                    //   imgCam.Source = ImageSource.FromStream(() => { return photo.GetStream(); });
 
                     var ageEmotionGenre = new AgeEmotionGenre
                     {

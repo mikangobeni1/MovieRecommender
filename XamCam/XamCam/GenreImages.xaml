@@ -20,35 +20,28 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
+        <StackLayout>
 
-        <ScrollView 
-            Grid.Row="0"
-            Orientation="Vertical"
-            Scrolled="Handle_Scrolled"
-            x:Name="scroller"
-            >
-            <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
 
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
 
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
 
-                        <RowDefinition Height="Auto"/>
-
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
 
 
-                    <Label Grid.Row="0"
+                <Label Grid.Row="0"
                            Grid.Column="0"
                            x:Name="lblCHooseImage"
                            Text="Choose 1" 
@@ -56,8 +49,9 @@
                            FontSize="20"
                            HorizontalOptions="Center"
                            VerticalOptions="Center"
+                               Margin="100, 10, 100 , 100"
                            TextColor="#707070" />
-                    <Frame 
+                <Frame 
                         Grid.Row="1"
                         Grid.Column="0"
                         WidthRequest="180"
@@ -67,19 +61,19 @@
                         Margin="10, 0, 0 , 0"
                         HasShadow="True" 
                         CornerRadius="10">
-                        <Image 
+                    <Image 
                            Aspect="AspectFill"
                            Source="comedy.jpg"
                            x:Name="genre_comedy">
-                            <Image.GestureRecognizers>
-                                <TapGestureRecognizer
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer
                             Tapped="Genre_Clicked"
                             NumberOfTapsRequired="1" />
-                            </Image.GestureRecognizers>
-                        </Image>
-                    </Frame>
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Frame>
 
-                    <Frame 
+                <Frame 
                         Grid.Row="1"
                         Grid.Column="0"
                         WidthRequest="180"
@@ -90,21 +84,21 @@
                         HasShadow="True" 
                         CornerRadius="10">
 
-                        <Image 
+                    <Image 
                            Aspect="AspectFill"
                            Source="action.jpg"
                            HeightRequest="130"
                            HorizontalOptions="End"
                            x:Name="genre_action">
-                            <Image.GestureRecognizers>
-                                <TapGestureRecognizer
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer
                             Tapped="Genre_Clicked"
                             NumberOfTapsRequired="1" />
-                            </Image.GestureRecognizers>
-                        </Image>
-                    </Frame>
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Frame>
 
-                    <Frame 
+                <Frame 
                         Grid.Row="2"
                         Grid.Column="0"
                         WidthRequest="180"
@@ -115,21 +109,21 @@
                         HasShadow="True" 
                         CornerRadius="10">
 
-                        <Image 
+                    <Image 
                            Aspect="AspectFill"
                            Source="romance.jpg"
                            HeightRequest="130"
                            HorizontalOptions="Start"
                            x:Name="genre_romance">
-                            <Image.GestureRecognizers>
-                                <TapGestureRecognizer
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer
                             Tapped="Genre_Clicked"
                             NumberOfTapsRequired="1" />
-                            </Image.GestureRecognizers>
-                        </Image>
-                    </Frame>
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Frame>
 
-                    <Frame 
+                <Frame 
                         Grid.Row="2"
                         Grid.Column="0"
                         WidthRequest="180"
@@ -140,19 +134,19 @@
                         HasShadow="True" 
                         CornerRadius="10">
 
-                        <Image 
+                    <Image 
                            Aspect="AspectFill"
                            Source="scifi.jpg"
                            HeightRequest="130"
                            x:Name="genre_scifi">
-                            <Image.GestureRecognizers>
-                                <TapGestureRecognizer
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer
                             Tapped="Genre_Clicked"
                             NumberOfTapsRequired="1" />
-                            </Image.GestureRecognizers>
-                        </Image>
-                    </Frame>
-                    <Frame 
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Frame>
+                <Frame 
                         Grid.Row="3"
                         Grid.Column="0"
                         WidthRequest="180"
@@ -162,19 +156,19 @@
                         Margin="10, 0, 0, 0"
                         HasShadow="True" 
                         CornerRadius="10">
-                        <Image 
+                    <Image 
                            Aspect="AspectFill"
                            Source="horror.PNG"
                            HeightRequest="130"
                           x:Name="genre_horror">
-                            <Image.GestureRecognizers>
-                                <TapGestureRecognizer
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer
                                 Tapped="Genre_Clicked"
                                 NumberOfTapsRequired="1" />
-                            </Image.GestureRecognizers>
-                        </Image>
-                    </Frame>
-                    <Frame 
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Frame>
+                <Frame 
                         Grid.Row="3"
                         Grid.Column="0"
                         WidthRequest="180"
@@ -184,52 +178,35 @@
                         Margin="0, 0, 10, 0"
                         HasShadow="True" 
                         CornerRadius="10">
-                        <Image 
+                    <Image 
                            Aspect="AspectFill"
                            Source="family.jpg"
                            HeightRequest="130"
                            x:Name="genre_family">
-                            <Image.GestureRecognizers>
-                                <TapGestureRecognizer
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer
                             Tapped="Genre_Clicked"
                             NumberOfTapsRequired="1" />
-                            </Image.GestureRecognizers>
-                        </Image>
-                    </Frame>
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Frame>
 
-                    <Button 
+                <Button 
                         IsVisible="False"
                         Grid.Row="4"
                         Grid.Column="0"
-                        Margin="0,0,0,50" 
+                        Margin="0,50,0,50" 
                         x:Name="btnProceedWithGenres"
                         Text="Proceed"
                         Clicked="Proceed_Clicked"
-                        BackgroundColor="#F1F1F1"
-                        TextColor="#707070"
+                        BackgroundColor="#C0C0C0"
+                        TextColor="#000000"
                         BorderRadius="10"
                         WidthRequest="300"
                         VerticalOptions="End"
                         HorizontalOptions="Center"
                     />
-                </Grid>
-            </StackLayout>
-        </ScrollView>
-        <Image  Grid.Row="0" 
-                        Source="downarrow.png"
-                        x:Name="fab"
-                        HorizontalOptions="End" 
-                        HeightRequest="20" 
-                        Margin="0,0,10,10" 
-                        VerticalOptions="End"
-                
-                >
-            <Image.GestureRecognizers>
-                <TapGestureRecognizer
-                            Tapped="NavArrow_Clicked"
-                            NumberOfTapsRequired="1" />
-            </Image.GestureRecognizers>
-        </Image>
-
+            </Grid>
+        </StackLayout>
     </Grid>
 </ContentPage>
