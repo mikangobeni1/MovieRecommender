@@ -32,6 +32,7 @@ namespace XamCam
             MovieApiCaller movieApiCaller = new MovieApiCaller();
 
             var response = await movieApiCaller.GetSuggestedMovieDetail(genreId, age);
+            Console.WriteLine(response);
 
             return response;
         }
