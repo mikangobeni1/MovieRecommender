@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace XamCam
@@ -12,6 +10,7 @@ namespace XamCam
         public event PropertyChangedEventHandler PropertyChanged;
 
         private ObservableCollection<Movies> Movies;
+        private ObservableCollection<Movies> SuggestedMovie;
 
         public ObservableCollection<Movies> movies
         {
@@ -21,45 +20,23 @@ namespace XamCam
             }
         }
 
-        public MovieViewModel()
+        public ObservableCollection<Movies> suggestedMovie
         {
-            movies = new ObservableCollection<Movies>();
-            similarMovies();
+            get { return SuggestedMovie; }
+            set { SuggestedMovie = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(""));
+            }
         }
-
-        public async Task<ObservableCollection<Movies>> SuggestedMovie(string genreId, int age)
+        public MovieViewModel(String genreIDs, int age)
         {
+            MovieViewModelAsync(genreIDs, age);
+        }
+        public async void MovieViewModelAsync(String genreIDs, int age)
+        {
+            
             MovieApiCaller movieApiCaller = new MovieApiCaller();
-
-            var response = await movieApiCaller.GetSuggestedMovieDetail(genreId, age);
-            Console.WriteLine(response);
-
-            return response;
-        }
-
-        private void similarMovies()
-        {
-            movies.Add(new XamCam.Movies
-            {
-                id = "0",
-                title = "Spider-Man: No Way Home",
-                image = "https://image.tmdb.org/t/p/original/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
-                runtime = 148
-            });
-            movies.Add(new XamCam.Movies
-            {
-                id = "0",
-                title = "Spider-Man: No Way Home",
-                image = "https://image.tmdb.org/t/p/original/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
-                runtime = 148
-            });
-            movies.Add(new XamCam.Movies
-            {
-                id = "0",
-                title = "Spider-Man: No Way Home",
-                image = "https://image.tmdb.org/t/p/original/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
-                runtime = 148
-            });
+            suggestedMovie = new ObservableCollection<Movies>(await movieApiCaller.GetSuggestedMovieDetail(genreIDs, age));
+            movies = new ObservableCollection<Movies>(await movieApiCaller.GetSimilarMovies(suggestedMovie[0].id));
         }
     }
 }

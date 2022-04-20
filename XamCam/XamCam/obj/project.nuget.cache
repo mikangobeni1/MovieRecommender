@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "Bv+ZyLjsVEauuTbkhrS0cJdyNArbRZ7iORKFplkoyd+B4KuJOT1sPs9fvyTYuVPzmHaDhrLXPm0a7BWd7gwCbQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\bbdnet2061\\GRAD\\C# Project\\XamCam\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj",
+=======
+  "dgSpecHash": "6j5CYmZaBL2EjEMVWjSgf8jyW8Peiy+QLBDtiJ/dZ+SVBOsr7Pl4ezDlG0CfViQhk8WDg0zB/BBZw+Tjw5WvuA==",
+  "success": true,
+  "projectFilePath": "C:\\GradProgramme\\LevelUps\\MovieRec2\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj",
+>>>>>>> MovieDisplayer
   "expectedPackageFiles": [
     "C:\\Users\\bbdnet2061\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\bbdnet2061\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",

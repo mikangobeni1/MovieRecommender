@@ -14,6 +14,7 @@ namespace XamCam
             MainPage = new NavigationPage(new LandingPage());
         }
 
+
         protected override void OnStart()
         {
             // Handle when your app starts

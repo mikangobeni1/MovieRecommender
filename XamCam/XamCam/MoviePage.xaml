@@ -1,44 +1,98 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:XamCam" xmlns:cards="http://xamarin.com/schemas/2014/forms"
              x:Class="XamCam.MoviePage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="We've got it!"
-                   TextDecorations="None" 
-               FontSize="18"
-                   FontAttributes="Bold"
-                    TextColor="#707070"
-                
+
+    <ScrollView >
+        <StackLayout BackgroundColor="White">
+
+            <Label
+                Text="We've got it!"
+                TextDecorations="None" 
+                FontSize="18"
+                FontAttributes="Bold"
+                TextColor="#707070"
                 HorizontalOptions="CenterAndExpand" />
 
-            <Frame HeightRequest="450" WidthRequest="300" BackgroundColor="White" Padding="0" HasShadow="True" Margin="10" CornerRadius="10" HorizontalOptions="CenterAndExpand">
-                <Image Source="https://image.tmdb.org/t/p/original/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg"/>
-            </Frame>
-            <Label Text="Spider-Man: No Way Home"
-                   TextDecorations="None" 
-               FontSize="13"
-                    TextColor="#707070"
-                HorizontalOptions="CenterAndExpand" />
-            <Label Text="148m"
-                   TextDecorations="None" 
-               FontSize="13"
-                    TextColor="#707070"
+            <CarouselView ItemsSource="{Binding suggestedMovie}" 
+                      HeightRequest="450"
+                      IsBounceEnabled="False"
+            >
 
-                HorizontalOptions="CenterAndExpand" />
-
-            <BoxView HeightRequest="10"/>
-            <Label Text="Not feeling it?"
-                   TextDecorations="None" 
-               FontSize="16"
-                   FontAttributes="Bold"
-                   
-                    TextColor="#707070"
-                
-                HorizontalOptions="CenterAndExpand" />
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout>
+                            <StackLayout>
+                                <Frame HeightRequest="450" WidthRequest="300" BackgroundColor="White" Padding="0" HasShadow="True"  CornerRadius="10"
+                                       HorizontalOptions="CenterAndExpand" >
+                                    <Image Source="{Binding image}" Aspect="AspectFill"/>
+                                </Frame>
+                                <Label Text="{Binding title}"
+                                       TextDecorations="None" 
+                                       FontSize="14"
+                                       TextColor="#707070"
+                                       HorizontalOptions="CenterAndExpand"
+                                       LineBreakMode="TailTruncation"/>
+                                <Label Text="{Binding runtime}"
+                                       TextDecorations="None" 
+                                       FontSize="13"
+                                       TextColor="#707070"
+                                       HorizontalOptions="CenterAndExpand" />
+                            </StackLayout>
+                        </StackLayout>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
             
-           
+            <BoxView HeightRequest="10"/>
 
+            <Label 
+                Text="Not feeling it?"
+                TextDecorations="None" 
+                FontSize="16"
+                FontAttributes="Bold"                
+                TextColor="#707070"      
+                HorizontalOptions="CenterAndExpand" />
+
+            <Grid HorizontalOptions="CenterAndExpand" HeightRequest="270" Margin="0,20,0,0" >
+                <StackLayout>
+                    <cards:CarouselView ItemsSource="{Binding movies}" PeekAreaInsets="100" IsBounceEnabled="False" IndicatorView="indicatorView" >
+                        <CarouselView.ItemTemplate>
+                            <DataTemplate>
+                                <StackLayout>
+                                    <Frame 
+                                        Padding="0"
+                                        HasShadow="True"
+                                        HeightRequest="220"
+                                        CornerRadius="10"
+                                        Margin="0,0,20,0">
+                                        <StackLayout>
+                                            <Image Source="{Binding image}"
+                                                   WidthRequest="148"   
+                                                   Aspect="AspectFill"
+                                            />
+                                        </StackLayout>
+                                    </Frame>
+                                    <Label Text="{Binding title}"
+                                           FontSize="13"
+                                           HorizontalOptions="Center"
+                                           Margin="0,0,20,0"
+                                           LineBreakMode="TailTruncation">
+                                    </Label>
+                                </StackLayout>
+                            </DataTemplate>
+                        </CarouselView.ItemTemplate>
+                    </cards:CarouselView>
+                    <IndicatorView x:Name="indicatorView" IndicatorColor="LightGray" SelectedIndicatorColor="DarkGray" HorizontalOptions="Center" />
+                </StackLayout>
+            </Grid>
+
+            <BoxView HeightRequest="20"/>
         </StackLayout>
-    </ContentPage.Content>
+        
+    </ScrollView>
+    
+    
+   
 </ContentPage>

@@ -85,7 +85,11 @@ mono_aot_mode_name:
 	.section	.rodata.env.str.8,"aMS",@progbits,1
 	.type	.L.env.str.8, @object
 .L.env.str.8:
+<<<<<<< HEAD
 	.asciz	"4867f81a-ef8c-4953-b2f1-a390fa9b5fc1"
+=======
+	.asciz	"d83c629b-e5b1-4f71-98a2-915166a11a12"
+>>>>>>> MovieDisplayer
 	.size	.L.env.str.8, 37
 	.section	.rodata.env.str.9,"aMS",@progbits,1
 	.type	.L.env.str.9, @object

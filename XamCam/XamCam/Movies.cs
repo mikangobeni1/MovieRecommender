@@ -9,8 +9,6 @@ namespace XamCam
         public string id { get; set; } 
         public string title { get; set; }
         public string image { get; set; }
-        public int runtime { get; set; }
-         
-
+        public string runtime { get; set; }
     }
 }

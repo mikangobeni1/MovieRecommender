@@ -36,8 +36,7 @@ namespace XamCam
             age = ageEmotionGenre.age;
 
             ColorTypeConverter converter = new ColorTypeConverter();
-            Color backSectionBackgroundColor = (Color)(converter.ConvertFromInvariantString("#9A7245"));
-            ((NavigationPage)Application.Current.MainPage).BarBackgroundColor = Color.White;
+            Color backSectionBackgroundColor = (Color)(converter.ConvertFromInvariantString("#9A7245"));     
             ((NavigationPage)Application.Current.MainPage).BarTextColor = backSectionBackgroundColor;
 
 
