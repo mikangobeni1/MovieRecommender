@@ -17,22 +17,22 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="EmojiPage.xaml">
+    <EmbeddedResource Update="View\EmojiPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="GenreImages.xaml">
+    <EmbeddedResource Update="View\GenreImages.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="GenreSelectionPage.xaml">
+    <EmbeddedResource Update="View\GenreSelectionPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="LandingPage.xaml">
+    <EmbeddedResource Update="View\LandingPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="MoviePage.xaml">
+    <EmbeddedResource Update="View\MoviePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="SelfiePage.xaml">
+    <EmbeddedResource Update="View\SelfiePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

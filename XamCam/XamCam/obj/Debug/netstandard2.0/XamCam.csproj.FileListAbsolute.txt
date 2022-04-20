@@ -78,21 +78,3 @@ C:\Users\bbdnet2378\Desktop\Grad Level Up\Java and C#\MovieRecommender\XamCam\Xa
 C:\Users\bbdnet2378\Desktop\Grad Level Up\Java and C#\MovieRecommender\XamCam\XamCam\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\bbdnet2378\Desktop\Grad Level Up\Java and C#\MovieRecommender\XamCam\XamCam\obj\Debug\netstandard2.0\XamCam.dll
 C:\Users\bbdnet2378\Desktop\Grad Level Up\Java and C#\MovieRecommender\XamCam\XamCam\obj\Debug\netstandard2.0\XamCam.pdb
-C:\Users\bbdnet2378\Desktop\Grad Level Up\MovieRecommender\XamCam\XamCam\obj\Debug\netstandard2.0\XamCam.dll
-C:\Users\bbdnet2378\Desktop\Grad Level Up\MovieRecommender\XamCam\XamCam\obj\Debug\netstandard2.0\XamCam.pdb
-C:\Users\bbdnet2378\Desktop\Grad Level Up\MovieRecommender\XamCam\XamCam\bin\Debug\netstandard2.0\XamCam.deps.json
-C:\Users\bbdnet2378\Desktop\Grad Level Up\MovieRecommender\XamCam\XamCam\bin\Debug\netstandard2.0\XamCam.dll
-C:\Users\bbdnet2378\Desktop\Grad Level Up\MovieRecommender\XamCam\XamCam\bin\Debug\netstandard2.0\XamCam.pdb
-C:\Users\bbdnet2378\Desktop\Grad Level Up\MovieRecommender\XamCam\XamCam\obj\Debug\netstandard2.0\XamCam.csproj.AssemblyReference.cache
-C:\Users\bbdnet2378\Desktop\Grad Level Up\MovieRecommender\XamCam\XamCam\obj\Debug\netstandard2.0\XamCam.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\bbdnet2378\Desktop\Grad Level Up\MovieRecommender\XamCam\XamCam\obj\Debug\netstandard2.0\App.xaml.g.cs
-C:\Users\bbdnet2378\Desktop\Grad Level Up\MovieRecommender\XamCam\XamCam\obj\Debug\netstandard2.0\EmojiPage.xaml.g.cs
-C:\Users\bbdnet2378\Desktop\Grad Level Up\MovieRecommender\XamCam\XamCam\obj\Debug\netstandard2.0\GenreImages.xaml.g.cs
-C:\Users\bbdnet2378\Desktop\Grad Level Up\MovieRecommender\XamCam\XamCam\obj\Debug\netstandard2.0\GenreSelectionPage.xaml.g.cs
-C:\Users\bbdnet2378\Desktop\Grad Level Up\MovieRecommender\XamCam\XamCam\obj\Debug\netstandard2.0\LandingPage.xaml.g.cs
-C:\Users\bbdnet2378\Desktop\Grad Level Up\MovieRecommender\XamCam\XamCam\obj\Debug\netstandard2.0\MoviePage.xaml.g.cs
-C:\Users\bbdnet2378\Desktop\Grad Level Up\MovieRecommender\XamCam\XamCam\obj\Debug\netstandard2.0\SelfiePage.xaml.g.cs
-C:\Users\bbdnet2378\Desktop\Grad Level Up\MovieRecommender\XamCam\XamCam\obj\Debug\netstandard2.0\XamCam.AssemblyInfoInputs.cache
-C:\Users\bbdnet2378\Desktop\Grad Level Up\MovieRecommender\XamCam\XamCam\obj\Debug\netstandard2.0\XamCam.AssemblyInfo.cs
-C:\Users\bbdnet2378\Desktop\Grad Level Up\MovieRecommender\XamCam\XamCam\obj\Debug\netstandard2.0\XamCam.csproj.CoreCompileInputs.cache
-C:\Users\bbdnet2378\Desktop\Grad Level Up\MovieRecommender\XamCam\XamCam\obj\Debug\netstandard2.0\XamlC.stamp
