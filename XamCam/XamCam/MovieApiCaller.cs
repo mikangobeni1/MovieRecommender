@@ -31,7 +31,7 @@ namespace XamCam
         //    var emoticon = new EmojiPage();
 
 
-        //    return genre;
+        //    return selectedGenre;
         //}
 
         private async Task<string> GetSuggestedMovie(string genreIDs, int age)

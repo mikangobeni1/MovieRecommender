@@ -95,3 +95,4 @@ C:\Users\bbdnet2061\GRAD\C# Project\XamCam\MovieRecommender\XamCam\XamCam\bin\De
 C:\Users\bbdnet2061\GRAD\C# Project\XamCam\MovieRecommender\XamCam\XamCam\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\bbdnet2061\GRAD\C# Project\XamCam\MovieRecommender\XamCam\XamCam\obj\Debug\netstandard2.0\XamCam.dll
 C:\Users\bbdnet2061\GRAD\C# Project\XamCam\MovieRecommender\XamCam\XamCam\obj\Debug\netstandard2.0\XamCam.pdb
+C:\Users\bbdnet2061\GRAD\C# Project\XamCam\MovieRecommender\XamCam\XamCam\obj\Debug\netstandard2.0\GenreImages.xaml.g.cs

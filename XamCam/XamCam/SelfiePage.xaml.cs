@@ -59,8 +59,6 @@ namespace XamCam
                     var message = await client.PostAsync("https://api-us.faceplusplus.com/facepp/v3/detect?api_key=8g0e2SuGg1bFNU3B0WC7gZepIY0Jv9XE&api_secret=jZL-LfCyw57R5nHXmFRD-TYBtQbA4BXG&return_attributes=emotion,age,gender", formContent);
                     var result = await message.Content.ReadAsStringAsync();
 
-                    Console.WriteLine(result);
-
                     // get results
 
                     JObject json = JObject.Parse(result);
@@ -90,23 +88,18 @@ namespace XamCam
 
                     // greatest key
                     var maxEmotionName = emotions.FirstOrDefault(x => x.Value == maxEmotionValue).Key;
-
-
-                    Console.WriteLine(result);
-                    Console.WriteLine("Age is: " + age);
-                    Console.WriteLine("Max emotion is: " + maxEmotionName + " with score: " + maxEmotionValue);
                     await DisplayAlert("Emotion", "Max emotion is: " + maxEmotionName + " with score: " + maxEmotionValue, "Ok");
 
                     // sets image on app
                     //   imgCam.Source = ImageSource.FromStream(() => { return photo.GetStream(); });
 
-                    var ageAndEmotionGenre = new AgeAndEmotionGenre
+                    var ageEmotionGenre = new AgeEmotionGenre
                     {
-                        emotionGenre = maxEmotionName,
+                        emotion = maxEmotionName,
                         age = age,
                     };
 
-                    await Navigation.PushAsync(new GenreSelectionPage(ageAndEmotionGenre));
+                    await Navigation.PushAsync(new GenreSelectionPage(ageEmotionGenre));
 
                 }
             }

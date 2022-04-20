@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
+    "\\XamCam",
     "\\XamCam\\XamCam"
   ],
-  "SelectedNode": "\\XamCam.sln",
+  "SelectedNode": "\\XamCam\\XamCam\\MovieViewModel.cs",
   "PreviewInSolutionExplorer": false
 }

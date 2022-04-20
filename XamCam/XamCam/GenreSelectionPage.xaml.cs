@@ -13,64 +13,54 @@ namespace XamCam
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class GenreSelectionPage : ContentPage
     {
-        String buttonImage1 = "";
-        String buttonImage2 = "";
-        public String SelectedGenre = ""; // check if this is okay
-        public String EmotionGenre = "";
-        String detectedEmotion; //Need to use actual variable for emotion
+        string buttonImage1 = "";
+        string buttonImage2 = "";
+        public string selectedGenre = "";
+        string detectedEmotion; 
         int age;
 
-        public enum Genres : int
+        public GenreSelectionPage(AgeEmotionGenre ageEmotionGenre)
         {
-            Action = 28,
-            Comedy = 35,
-            Drama = 18,
-            Family = 10751,
-            Horror = 27,
-            Romance = 10749,
-            ScienceFiction = 878,
-            Thriller = 53,
-        }
 
-        public GenreSelectionPage(AgeAndEmotionGenre ageAndEmotionGenre)
-        {
 
             InitializeComponent();
+
+            
+
             ColorTypeConverter converter = new ColorTypeConverter();
             Color backSectionBackgroundColor = (Color)(converter.ConvertFromInvariantString("#9A7245"));
             ((NavigationPage)Application.Current.MainPage).BarBackgroundColor = Color.White;
             ((NavigationPage)Application.Current.MainPage).BarTextColor = backSectionBackgroundColor;
-
-            detectedEmotion = ageAndEmotionGenre.emotionGenre;
-            age = ageAndEmotionGenre.age;
+            detectedEmotion = ageEmotionGenre.emotion;
+            age = ageEmotionGenre.age;
 
             switch (detectedEmotion)
             {
-                case "happiness":   //Happy
+                case "happiness":
                     buttonImage1 = "Comedy.png";
                     buttonImage2 = "Romance.png";
                     break;
-                case "neutral":  // Neutral
+                case "neutral":
                     buttonImage1 = "SciFi.png";
                     buttonImage2 = "Family.png";
                     break;
-                case "disgust":  //Disgust
+                case "disgust":
                     buttonImage1 = "Action.png";
                     buttonImage2 = "Comedy.png";
                     break;
-                case "anger": //Anger
+                case "anger":
                     buttonImage1 = "Action.png";
                     buttonImage2 = "Comedy.png";
                     break;
-                case "sadness":  //Sad
+                case "sadness":
                     buttonImage1 = "Romance.png";
                     buttonImage2 = "drama.png";
                     break;
-                case "fear":  //Fear
+                case "fear":
                     buttonImage1 = "Horror.png";
                     buttonImage2 = "Romance.png";
                     break;
-                case "surprise": //Surprise
+                case "surprise":
                     buttonImage1 = "Comedy.png";
                     buttonImage2 = "Romance.png";
                     break;
@@ -125,11 +115,11 @@ namespace XamCam
 
             Button defaultGenreButton = new Button
             {
-                Text = "Make an assumption",
+                Text = "Not Feeling it?",
                 VerticalOptions = LayoutOptions.CenterAndExpand,
                 HorizontalOptions = LayoutOptions.Center
             };
-            defaultGenreButton.Clicked += (sender, args) => DetermineGenre(null);
+            defaultGenreButton.Clicked += (sender, args) => NavigateToGenreImages();
             // Add in correct page here
 
 
@@ -140,146 +130,56 @@ namespace XamCam
         }
 
       
-        public void DetermineGenre(String genre)
+        public async void DetermineGenre(String genre)
         {
             switch (genre)
             {
                 case "Action.png":
-                    SelectedGenre = "Action";
-                    DisplayAlert(genre, SelectedGenre, "close");
+                    selectedGenre = "Action";
                     break;
                 case "Comedy.png":
-                    SelectedGenre = "Comedy";
-                    DisplayAlert(genre, SelectedGenre, "close");
+                    selectedGenre = "Comedy";
                     break;
                 case "drama.png":
-                    SelectedGenre = "Drama";
-                    DisplayAlert(genre, SelectedGenre, "close");
+                    selectedGenre = "Drama";
                     break;
                 case "Family.png":
-                    SelectedGenre = "Family";
-                    DisplayAlert(genre, SelectedGenre, "close");
+                    selectedGenre = "Family";
                     break;
                 case "Horror.png":
-                    SelectedGenre = "Horror";
-                    DisplayAlert(genre, SelectedGenre, "close");
+                    selectedGenre = "Horror";
                     break;
                 case "Romance.png":
-                    SelectedGenre = "Romance";
-                    DisplayAlert(genre, SelectedGenre, "close");
+                    selectedGenre = "Romance";
                     break;
                 case "SciFi.png":
-                    SelectedGenre = "Sci-Fi";
-                    DisplayAlert(genre, SelectedGenre, "close");
+                    selectedGenre = "SciFi";
                     break;
                 default:
-                    DisplayAlert("Nothing", "Unknown", "close");
+                    NavigateToGenreImages();
                     break;
 
             }
 
-            switch (detectedEmotion)
+            var ageEmotionGenre = new AgeEmotionGenre
             {
-                case "happiness":   //Happy
-                    EmotionGenre = "Romance";
-                    break;
-                case "neutral":  // Neutral
-                    EmotionGenre = "SciFi";
-                    break;
-                case "disgust":  //Disgust
-                    EmotionGenre = "Comedy";
-                    break;
-                case "anger": //Anger
-                    EmotionGenre = "Thriller";
-                    break;
-                case "sadness":  //Sad
-                    EmotionGenre = "Drama";
-                    break;
-                case "fear":  //Fear
-                    EmotionGenre = "Horror";
-                    break;
-                case "surprise": //Surprise
-                    EmotionGenre = "Action";
-                    break;
-                default:
-                    EmotionGenre = "Family";
-                    break;
-
-            }
-
-            MapGenreToID(EmotionGenre, SelectedGenre, age);
-        }
-
-        public async void MapGenreToID(string genreBasedOnEmotion, string genreBasedOnSelectedImage, int UserAge)
-        {
-            int genreBasedOnEmotionID;
-            int genreBasedOnSelectedImageID;
-
-            switch (genreBasedOnEmotion)
-            {
-                case "Romance":   //Happy
-                    genreBasedOnEmotionID = (int)Genres.Romance;
-                    break;
-                case "SciFi":  // Neutral
-                    genreBasedOnEmotionID = (int)Genres.ScienceFiction;
-                    break;
-                case "Comedy":  //Disgust
-                    genreBasedOnEmotionID = (int)Genres.Comedy;
-                    break;
-                case "Thriller": //Anger
-                    genreBasedOnEmotionID = (int)Genres.Thriller;
-                    break;
-                case "Drama":  //Sad
-                    genreBasedOnEmotionID = (int)Genres.Drama;
-                    break;
-                case "Horror":  //Fear
-                    genreBasedOnEmotionID = (int)Genres.Horror;
-                    break;
-                case "Action": //Surprise
-                    genreBasedOnEmotionID = (int)Genres.Action;
-                    break;
-                default:
-                    genreBasedOnEmotionID = (int)Genres.Family;
-                    break;
-
-            }
-
-            switch (genreBasedOnSelectedImage)
-            {
-                case "Romance":   //Happy
-                    genreBasedOnSelectedImageID = (int)Genres.Romance;
-                    break;
-                case "SciFi":  // Neutral
-                    genreBasedOnSelectedImageID = (int)Genres.ScienceFiction;
-                    break;
-                case "Comedy":  //Disgust
-                    genreBasedOnSelectedImageID = (int)Genres.Comedy;
-                    break;
-                case "Thriller": //Anger
-                    genreBasedOnSelectedImageID = (int)Genres.Thriller;
-                    break;
-                case "Drama":  //Sad
-                    genreBasedOnSelectedImageID = (int)Genres.Drama;
-                    break;
-                case "Horror":  //Fear
-                    genreBasedOnSelectedImageID = (int)Genres.Horror;
-                    break;
-                case "Action": //Surprise
-                    genreBasedOnSelectedImageID = (int)Genres.Action;
-                    break;
-                default:
-                    genreBasedOnSelectedImageID = (int)Genres.Family;
-                    break;
-
-            }
-
-            var ageAndEmotionGenre = new AgeAndEmotionGenre
-            {
-                emotionGenre = $"{genreBasedOnEmotionID}, {genreBasedOnSelectedImageID}",
+                emotion = detectedEmotion,
+                genre = selectedGenre,
                 age = age,
             };
 
-            await Navigation.PushAsync(new MoviePage(ageAndEmotionGenre));
+            await Navigation.PushAsync(new MoviePage(ageEmotionGenre));
+        }
+
+        public async void NavigateToGenreImages()
+        {
+            var ageEmotionGenre = new AgeEmotionGenre
+            {
+                emotion = detectedEmotion,
+                age = age,
+            };
+
+            await Navigation.PushAsync(new GenreImages(ageEmotionGenre));
         }
     }
 }

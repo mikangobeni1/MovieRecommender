@@ -4,9 +4,11 @@ using System.Text;
 
 namespace XamCam
 {
-    public class AgeAndEmotionGenre
+    public class AgeEmotionGenre
     {
-        public string emotionGenre { get; set; }
+
+        public string emotion { get; set; }
+        public string genre { get; set; }
         public int age { get; set; }
     }
 }
