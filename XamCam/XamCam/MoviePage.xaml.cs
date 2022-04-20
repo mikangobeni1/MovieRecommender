@@ -42,6 +42,8 @@ namespace XamCam
 
 
             MapGenreToID(ageEmotionGenre);
+
+            BindingContext = new MovieViewModel(selectedGenreIDs, age);
             //MovieViewModel viewModel = new MovieViewModel();
             //Console.WriteLine(viewModel.SuggestedMovie(selectedGenreIDs, age));
         }

@@ -74,7 +74,6 @@
         }
       }
     },
-<<<<<<< HEAD
     "C:\\Users\\bbdnet2061\\GRAD\\C# Project\\XamCam\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -83,16 +82,6 @@
         "projectPath": "C:\\Users\\bbdnet2061\\GRAD\\C# Project\\XamCam\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj",
         "packagesPath": "C:\\Users\\bbdnet2061\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\bbdnet2061\\GRAD\\C# Project\\XamCam\\MovieRecommender\\XamCam\\XamCam\\obj\\",
-=======
-    "C:\\GradProgramme\\LevelUps\\MovieRec2\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\GradProgramme\\LevelUps\\MovieRec2\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj",
-        "projectName": "XamCam",
-        "projectPath": "C:\\GradProgramme\\LevelUps\\MovieRec2\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj",
-        "packagesPath": "C:\\Users\\bbdnet2579\\.nuget\\packages\\",
-        "outputPath": "C:\\GradProgramme\\LevelUps\\MovieRec2\\MovieRecommender\\XamCam\\XamCam\\obj\\",
->>>>>>> MovieDisplayer
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

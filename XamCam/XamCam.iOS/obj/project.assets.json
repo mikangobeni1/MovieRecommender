@@ -1273,19 +1273,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\bbdnet2061\\GRAD\\C# Project\\XamCam\\MovieRecommender\\XamCam\\XamCam.iOS\\XamCam.iOS.csproj",
       "projectName": "XamCam.iOS",
       "projectPath": "C:\\Users\\bbdnet2061\\GRAD\\C# Project\\XamCam\\MovieRecommender\\XamCam\\XamCam.iOS\\XamCam.iOS.csproj",
       "packagesPath": "C:\\Users\\bbdnet2061\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\bbdnet2061\\GRAD\\C# Project\\XamCam\\MovieRecommender\\XamCam\\XamCam.iOS\\obj\\",
-=======
-      "projectUniqueName": "C:\\GradProgramme\\LevelUps\\MovieRec2\\MovieRecommender\\XamCam\\XamCam.iOS\\XamCam.iOS.csproj",
-      "projectName": "XamCam.iOS",
-      "projectPath": "C:\\GradProgramme\\LevelUps\\MovieRec2\\MovieRecommender\\XamCam\\XamCam.iOS\\XamCam.iOS.csproj",
-      "packagesPath": "C:\\Users\\bbdnet2579\\.nuget\\packages\\",
-      "outputPath": "C:\\GradProgramme\\LevelUps\\MovieRec2\\MovieRecommender\\XamCam\\XamCam.iOS\\obj\\",
->>>>>>> MovieDisplayer
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
