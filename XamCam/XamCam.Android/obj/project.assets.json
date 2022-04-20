@@ -2118,11 +2118,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\GradProgramme\\LevelUps\\MovieRecommender\\MovieRecommender\\XamCam\\XamCam.Android\\XamCam.Android.csproj",
+      "projectUniqueName": "C:\\GradProgramme\\LevelUps\\MovieRec2\\MovieRecommender\\XamCam\\XamCam.Android\\XamCam.Android.csproj",
       "projectName": "XamCam.Android",
-      "projectPath": "C:\\GradProgramme\\LevelUps\\MovieRecommender\\MovieRecommender\\XamCam\\XamCam.Android\\XamCam.Android.csproj",
+      "projectPath": "C:\\GradProgramme\\LevelUps\\MovieRec2\\MovieRecommender\\XamCam\\XamCam.Android\\XamCam.Android.csproj",
       "packagesPath": "C:\\Users\\bbdnet2579\\.nuget\\packages\\",
-      "outputPath": "C:\\GradProgramme\\LevelUps\\MovieRecommender\\MovieRecommender\\XamCam\\XamCam.Android\\obj\\",
+      "outputPath": "C:\\GradProgramme\\LevelUps\\MovieRec2\\MovieRecommender\\XamCam\\XamCam.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2145,8 +2145,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\GradProgramme\\LevelUps\\MovieRecommender\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj": {
-              "projectPath": "C:\\GradProgramme\\LevelUps\\MovieRecommender\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj"
+            "C:\\GradProgramme\\LevelUps\\MovieRec2\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj": {
+              "projectPath": "C:\\GradProgramme\\LevelUps\\MovieRec2\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj"
             }
           }
         }

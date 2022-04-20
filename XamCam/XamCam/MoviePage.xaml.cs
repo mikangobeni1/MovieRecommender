@@ -12,12 +12,12 @@ namespace XamCam
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MoviePage : ContentPage
     {
-        public MoviePage()
+        public MoviePage(String genreIDs, int age)
         {
             InitializeComponent();
+            BindingContext = new MovieViewModel(genreIDs, age);
             ColorTypeConverter converter = new ColorTypeConverter();
-            Color backSectionBackgroundColor = (Color)(converter.ConvertFromInvariantString("#9A7245"));
-            ((NavigationPage)Application.Current.MainPage).BarBackgroundColor = Color.White;
+            Color backSectionBackgroundColor = (Color)(converter.ConvertFromInvariantString("#9A7245"));     
             ((NavigationPage)Application.Current.MainPage).BarTextColor = backSectionBackgroundColor;
         }
     }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rCJF9/Kc9fuGlBCBiuRCGW99rmEL1j7bpycqF5vm/MnJbYkCd5NXq2YZ7Z/OUd8/xn3jmOz6CtCIi9kqDWOuFQ==",
+  "dgSpecHash": "6j5CYmZaBL2EjEMVWjSgf8jyW8Peiy+QLBDtiJ/dZ+SVBOsr7Pl4ezDlG0CfViQhk8WDg0zB/BBZw+Tjw5WvuA==",
   "success": true,
-  "projectFilePath": "C:\\GradProgramme\\LevelUps\\MovieRecommender\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj",
+  "projectFilePath": "C:\\GradProgramme\\LevelUps\\MovieRec2\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bbdnet2579\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\bbdnet2579\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\GradProgramme\\LevelUps\\MovieRecommender\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj": {}
+    "C:\\GradProgramme\\LevelUps\\MovieRec2\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj": {}
   },
   "projects": {
-    "C:\\GradProgramme\\LevelUps\\MovieRecommender\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj": {
+    "C:\\GradProgramme\\LevelUps\\MovieRec2\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GradProgramme\\LevelUps\\MovieRecommender\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj",
+        "projectUniqueName": "C:\\GradProgramme\\LevelUps\\MovieRec2\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj",
         "projectName": "XamCam",
-        "projectPath": "C:\\GradProgramme\\LevelUps\\MovieRecommender\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj",
+        "projectPath": "C:\\GradProgramme\\LevelUps\\MovieRec2\\MovieRecommender\\XamCam\\XamCam\\XamCam.csproj",
         "packagesPath": "C:\\Users\\bbdnet2579\\.nuget\\packages\\",
-        "outputPath": "C:\\GradProgramme\\LevelUps\\MovieRecommender\\MovieRecommender\\XamCam\\XamCam\\obj\\",
+        "outputPath": "C:\\GradProgramme\\LevelUps\\MovieRec2\\MovieRecommender\\XamCam\\XamCam\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

@@ -19,8 +19,8 @@ namespace XamCam.Droid
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
 
-            Window.SetStatusBarColor(Android.Graphics.Color.Rgb(128, 128, 128));
-            Window.SetNavigationBarColor(Android.Graphics.Color.Rgb(255, 255, 255));
+            Window.SetStatusBarColor(Android.Graphics.Color.Rgb(255, 255, 255));
+            Window.SetNavigationBarColor(Android.Graphics.Color.Rgb(0, 0, 0));
 
         }
     }

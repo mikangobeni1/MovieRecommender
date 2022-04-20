@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eUTOF38QVqfvwXOpHYHez8Xwo5jQG9UrRm8yP/vtjUO2V1GyqDia34aFtbs8dCp3KfQx0UjBFPTnvGez7S+ztg==",
+  "dgSpecHash": "WOXbwB2mequyGnO36lXvAv6B2edQYPJvuE/haRsYSfSgyuwyrUrddS5GHlHTQfxg7wImUfoUumVltCq3G1T8BQ==",
   "success": true,
-  "projectFilePath": "C:\\GradProgramme\\LevelUps\\MovieRecommender\\MovieRecommender\\XamCam\\XamCam.iOS\\XamCam.iOS.csproj",
+  "projectFilePath": "C:\\GradProgramme\\LevelUps\\MovieRec2\\MovieRecommender\\XamCam\\XamCam.iOS\\XamCam.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bbdnet2579\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\bbdnet2579\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",

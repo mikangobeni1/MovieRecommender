@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Text;
 
 namespace XamCam
 {
@@ -11,6 +9,7 @@ namespace XamCam
         public event PropertyChangedEventHandler PropertyChanged;
 
         private ObservableCollection<Movies> Movies;
+        private ObservableCollection<Movies> SuggestedMovie;
 
         public ObservableCollection<Movies> movies
         {
@@ -20,35 +19,20 @@ namespace XamCam
             }
         }
 
-        public MovieViewModel()
+        public ObservableCollection<Movies> suggestedMovie
         {
-            movies = new ObservableCollection<Movies>();
-            similarMovies();
+            get { return SuggestedMovie; }
+            set { SuggestedMovie = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(""));
+            }
         }
-
-        private void similarMovies()
+        public MovieViewModel(String genreIDs, int age)
         {
-            movies.Add(new XamCam.Movies
-            {
-                id = "0",
-                title = "Spider-Man: No Way Home",
-                image = "https://image.tmdb.org/t/p/original/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
-                runtime = 148
-            });
-            movies.Add(new XamCam.Movies
-            {
-                id = "0",
-                title = "Spider-Man: No Way Home",
-                image = "https://image.tmdb.org/t/p/original/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
-                runtime = 148
-            });
-            movies.Add(new XamCam.Movies
-            {
-                id = "0",
-                title = "Spider-Man: No Way Home",
-                image = "https://image.tmdb.org/t/p/original/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
-                runtime = 148
-            });
+            suggestedMovie = new ObservableCollection<Movies>();
+            movies = new ObservableCollection<Movies>();
+            MovieApiCaller movieApiCaller = new MovieApiCaller();
+            suggestedMovie = movieApiCaller.getSuggestedMovieDetail(genreIDs, age);
+            movies = movieApiCaller.getSimilarMovies(suggestedMovie[0].id);
         }
     }
 }
