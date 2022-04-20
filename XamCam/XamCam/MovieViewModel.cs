@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Threading.Tasks;
 
 namespace XamCam
 {
@@ -28,11 +29,14 @@ namespace XamCam
         }
         public MovieViewModel(String genreIDs, int age)
         {
-            suggestedMovie = new ObservableCollection<Movies>();
-            movies = new ObservableCollection<Movies>();
+            MovieViewModelAsync(genreIDs, age);
+        }
+        public async void MovieViewModelAsync(String genreIDs, int age)
+        {
+            
             MovieApiCaller movieApiCaller = new MovieApiCaller();
-            suggestedMovie = movieApiCaller.getSuggestedMovieDetail(genreIDs, age);
-            movies = movieApiCaller.getSimilarMovies(suggestedMovie[0].id);
+            suggestedMovie = new ObservableCollection<Movies>(await movieApiCaller.GetSuggestedMovieDetail(genreIDs, age));
+            movies = new ObservableCollection<Movies>(await movieApiCaller.GetSimilarMovies(suggestedMovie[0].id));
         }
     }
 }

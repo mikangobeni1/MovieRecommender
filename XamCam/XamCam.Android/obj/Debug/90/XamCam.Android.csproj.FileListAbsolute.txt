@@ -2025,3 +2025,4 @@ C:\GradProgramme\LevelUps\MovieRec2\MovieRecommender\XamCam\XamCam.Android\obj\D
 C:\GradProgramme\LevelUps\MovieRec2\MovieRecommender\XamCam\XamCam.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\GradProgramme\LevelUps\MovieRec2\MovieRecommender\XamCam\XamCam.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\GradProgramme\LevelUps\MovieRec2\MovieRecommender\XamCam\XamCam.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+C:\GradProgramme\LevelUps\MovieRec2\MovieRecommender\XamCam\XamCam.Android\bin\Debug\XamCam.dll.mdb
